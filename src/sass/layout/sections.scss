@@ -1,0 +1,22 @@
+.section {
+    padding: 24px;
+}
+
+.section > .section {
+    padding-left: 0;
+    padding-right: 0;
+
+    &:not(:first-child) {
+        padding-top: 0;
+    }
+}
+
+.min-80vh {
+    min-height: 80vh;
+}
+
+@media (min-width: 1280px) {
+    .section {
+        padding: 10vw;
+    }
+}

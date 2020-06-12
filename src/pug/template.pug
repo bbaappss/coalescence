@@ -1,0 +1,19 @@
+include mixins/image.pug
+include mixins/gallery.pug
+include mixins/icon.pug
+include mixins/section.pug
+
+block theme
+  - var themeName = ""
+
+doctype html
+html(
+  lang="en"
+  class=themeName
+)
+  include regions/head.pug
+  body
+    //- include regions/header.pug
+    main.main#main(role="main")
+      block content
+    include regions/footer.pug

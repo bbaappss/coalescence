@@ -1,0 +1,20 @@
+.vcard(
+  itemscope
+  itemtype="http://schema.org/Organization"
+)
+  .org(itemprop="name") Divinitree Santa Barbara
+  a.email(
+    href="mailto:@"
+    itemprop="email"
+  ) email@divinitreesantabarbara.com
+  address(
+    itemprop="address"
+    itemscope
+    itemtype="http://schema.org/PostalAddress"
+  )
+    .street-address(itemprop="streetAddress") 25 East De La Guerra Street
+    .street-address-details
+      span.locality(itemprop="addressLocality") Santa Barbara,&nbsp;
+      span.region(itemprop="addressRegion") CA&nbsp;
+      span.postal-code(itemprop="postalCode") 93101
+  .tel(itemprop="telephone") 805-897-3354
