@@ -3,9 +3,6 @@
 @import 'layout/*';
 @import 'modules/*';
 
-a {
-    @include orange-1;
-}
 
 img {
     display: block;
@@ -17,26 +14,26 @@ img {
     display: block;
 }
 
-.p-b-0 {
-    padding-bottom: 0;
+.header {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    max-width: 1000px;
+    margin: 24px auto;
+
+    img {
+        max-width: 100px;
+    }
 }
 
-.p-t-0 {
-    padding-top: 0;
+h1 {
+    font-size: 56px;
 }
 
-#healCode48container a {
-    display: none;
-}
-
-.vcard {
-    margin: 24px 0 96px 0;
-}
-
-img.rounded {
-    border-radius: 16px;
-}
-
-.line-height-1 {
-    line-height: 1.2;
+p {
+    font-size: 36px;
+    line-height: 1.6;
 }

@@ -1,15 +1,66 @@
-.orange-1 {
-    color: #d88c30;
+$black: #000;
+$white: #fff;
+$white: #fff;
+
+$edward: #9BABAA;
+$sandyBrown: #F8A667;
+$mineralGreen: #476B5D;
+$rawSienna: #D47042;
+$fireFly: #0B242B;
+
+.black {
+    color: $black;
 }
 
-@mixin orange-1 {
-    color: #d88c30;
+.white {
+    color: $white;
 }
 
-.red-1 {
-    color: #d83030;
+.edward {
+    color: $edward;
 }
 
-@mixin red-1 {
-    color: #d83030;
+.sandyBrown {
+    color: $sandyBrown;
+}
+
+.mineralGreen{
+    color: $mineralGreen;
+}
+
+.rawSienna {
+    color: $rawSienna;
+}
+
+.fireFly {
+    color: $fireFly;
+}
+
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-edward {
+    background-color: $edward;
+}
+
+.bg-sandyBrown {
+    background-color: $sandyBrown;
+}
+
+.bg-mineralGreen{
+    background-color: $mineralGreen;
+}
+
+.bg-rawSienna {
+    background-color: $rawSienna;
+}
+
+.bg-fireFly {
+    background-color: $fireFly;
 }
