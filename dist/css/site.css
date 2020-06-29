@@ -340,11 +340,6 @@ body {
 img {
   display: block; }
 
-.helping-hand {
-  transform: rotate(35deg) translateX(-25px);
-  margin: 47px auto 30px;
-  display: block; }
-
 .header {
   align-items: center;
   display: flex;
@@ -354,18 +349,41 @@ img {
   padding-top: 36px;
   max-width: 1000px;
   margin: 24px auto; }
-  .header img {
-    max-width: 100px; }
 
-h1 {
-  font-size: 56px; }
+.logo {
+  margin: 80px auto;
+  width: 80%; }
+
+.logo img {
+  animation: logo .9s ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: scale(0.8) translateY(20px); }
+
+@keyframes logo {
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px); } }
+
+h1, h2 {
+  line-height: 1.2; }
 
 p {
-  font-size: 36px;
+  margin: 0;
+  font-size: 24px;
   line-height: 1.6; }
+
+a {
+  color: #fff; }
+
+.section.vh-half {
+  height: 50vh; }
 
 .sexy-graphic {
   align-items: center;
   justify-content: center;
   display: flex;
   height: 20vw; }
+
+.section:last-of-type {
+  padding-bottom: 96px; }
