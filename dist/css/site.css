@@ -370,7 +370,7 @@ h1, h2 {
 
 p {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6; }
 
 a {
@@ -387,3 +387,29 @@ a {
 
 .section:last-of-type {
   padding-bottom: 96px; }
+
+@media (min-width: 768px) {
+  .splash-page-container {
+    display: flex; }
+    .splash-page-container > * {
+      height: 100vh;
+      width: 50%; }
+    .splash-page-container .logo {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0; }
+      .splash-page-container .logo img {
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 24vw; }
+    .splash-page-container .div-for-no-reason-other-than-flex > * {
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      height: 50vh; }
+    .splash-page-container .section {
+      padding: 0 5vw; }
+    .splash-page-container .section:last-of-type {
+      padding-bottom: 0; } }
