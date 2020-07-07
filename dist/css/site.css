@@ -76,7 +76,7 @@ body {
 
 @media (min-width: 1280px) {
   .section {
-    padding: 10vw; } }
+    padding: 2vw 10vw; } }
 
 .community-class {
   padding: 24px;
@@ -340,19 +340,10 @@ body {
 img {
   display: block; }
 
-.header {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: space-between;
-  padding-bottom: 36px;
-  padding-top: 36px;
-  max-width: 1000px;
-  margin: 24px auto; }
-
 .logo {
-  margin: 80px auto;
-  width: 80%; }
+  display: block;
+  margin: 0 auto;
+  width: 40%; }
 
 .logo img {
   animation: logo .9s ease;
@@ -365,51 +356,5 @@ img {
     opacity: 1;
     transform: scale(1) translateY(0px); } }
 
-h1, h2 {
-  line-height: 1.2; }
-
-p {
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.6; }
-
 a {
   color: #fff; }
-
-.section.vh-half {
-  height: 50vh; }
-
-.sexy-graphic {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  height: 20vw; }
-
-.section:last-of-type {
-  padding-bottom: 96px; }
-
-@media (min-width: 768px) {
-  .splash-page-container {
-    display: flex; }
-    .splash-page-container > * {
-      height: 100vh;
-      width: 50%; }
-    .splash-page-container .logo {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      margin: 0; }
-      .splash-page-container .logo img {
-        padding: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 24vw; }
-    .splash-page-container .div-for-no-reason-other-than-flex > * {
-      justify-content: center;
-      flex-direction: column;
-      display: flex;
-      height: 50vh; }
-    .splash-page-container .section {
-      padding: 0 5vw; }
-    .splash-page-container .section:last-of-type {
-      padding-bottom: 0; } }
