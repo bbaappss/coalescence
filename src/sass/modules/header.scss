@@ -1,5 +1,36 @@
-.header {
-    position: absolute;
-    padding: 2vw 5vw;
-    width: 100%;
+@media screen and (max-width: 576px) {
+    header.parallax-header {
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    header.parallax-header {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    header.parallax-header {
+        height: 600px;
+    }
+}
+
+.parallax-header {
+    background: #efddeb;
+}
+
+.title-container {
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    text-shadow: -2px 1px 7px rgba(0, 0, 0, 1);
+}
+
+.primary-title {
+    margin-top: 10vw;
 }

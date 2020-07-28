@@ -12,20 +12,24 @@ head
 
   link(
     rel="stylesheet"
-    href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
-  )
-
-  link(
-    rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Julius+Sans+One|PT+Sans"
   )
 
   link(
     rel="stylesheet"
-    href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css"
   )
 
   link(
     rel="stylesheet"
     href="/css/site.css"
   )
+
+  script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+
+  script.
+    //page load animation
+    $(window).on("load", function () {
+      $("#loading img").fadeOut(200);
+      $("#loading").delay(400).fadeOut(200);
+    });

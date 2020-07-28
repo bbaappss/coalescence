@@ -77,15 +77,32 @@ h1, h2, h3, h4, h5 {
   .section {
     padding: 2vw 10vw; } }
 
-.header {
-  position: absolute;
-  padding: 2vw 5vw;
-  width: 100%; }
+@media screen and (max-width: 576px) {
+  header.parallax-header {
+    height: 350px !important; } }
 
-.hero {
-  padding: 3vw 0; }
-  .hero .logo {
-    padding: 2vw; }
+@media screen and (max-width: 769px) {
+  header.parallax-header {
+    height: 700px; } }
+
+@media screen and (max-width: 769px) {
+  header.parallax-header {
+    height: 600px; } }
+
+.parallax-header {
+  background: #efddeb; }
+
+.title-container {
+  align-items: center; }
+
+header h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 6vw;
+  text-shadow: -2px 1px 7px black; }
+
+.primary-title {
+  margin-top: 10vw; }
 
 img {
   display: block; }
