@@ -18,19 +18,41 @@
 
 .parallax-header {
     background: #efddeb;
+    z-index: 1;
 }
 
 .title-container {
     align-items: center;
 }
 
-header h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 6vw;
-    text-shadow: -2px 1px 7px rgba(0, 0, 0, 1);
-}
+header {
 
-.primary-title {
-    margin-top: 10vw;
+    h1,
+    span {
+        color: white;
+        display: block;
+        text-shadow: -2px 1px 7px rgba(0, 0, 0, 1);
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 10vw;
+    }
+
+    span {
+        text-transform: uppercase;
+
+        &.disconnect {
+            font-size: 5.8vw;
+            margin-top: 36px;
+        }
+
+        &.reconnect {
+            font-size: 7.5vw;
+        }
+    }
+
+    .primary-title {
+        margin-top: 14vw;
+    }
 }

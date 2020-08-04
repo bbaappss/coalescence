@@ -3,6 +3,10 @@
 @import 'layout/*';
 @import 'modules/*';
 
+body {
+    background: rgb(80, 53, 86);
+    background: linear-gradient(180deg, rgba(80, 53, 86, 1) 0%, rgba(56, 33, 62, 1) 50%);
+}
 
 img {
     display: block;
@@ -14,7 +18,7 @@ img {
     width: 80%;
 
     @media (min-width: 1024px) {
-        width: 40%;    
+        width: 40%;
     }
 }
 
@@ -29,7 +33,7 @@ img {
 @keyframes logo {
     100% {
         opacity: 1;
-        transform: scale(1) translateY(0px); 
+        transform: scale(1) translateY(0px);
     }
 }
 
@@ -37,4 +41,3 @@ img {
 a {
     color: $white;
 }
-

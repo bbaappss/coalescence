@@ -1,0 +1,23 @@
+.minifesto {
+    background: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: -20vw;
+    position: relative;
+    width: 90vw;
+    z-index: 2;
+
+    h2 {
+        display: inline-block;
+        padding-bottom: 8px;
+        border-bottom: 2px solid black;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 12px;
+        line-height: 1.6;
+    }
+
+}

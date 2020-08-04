@@ -90,19 +90,54 @@ h1, h2, h3, h4, h5 {
     height: 600px; } }
 
 .parallax-header {
-  background: #efddeb; }
+  background: #efddeb;
+  z-index: 1; }
 
 .title-container {
   align-items: center; }
 
-header h1 {
+header h1,
+header span {
   color: white;
-  font-weight: bold;
-  font-size: 6vw;
+  display: block;
   text-shadow: -2px 1px 7px black; }
 
-.primary-title {
-  margin-top: 10vw; }
+header h1 {
+  font-weight: bold;
+  font-size: 10vw; }
+
+header span {
+  text-transform: uppercase; }
+  header span.disconnect {
+    font-size: 5.8vw;
+    margin-top: 36px; }
+  header span.reconnect {
+    font-size: 7.5vw; }
+
+header .primary-title {
+  margin-top: 14vw; }
+
+.minifesto {
+  background: white;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: -20vw;
+  position: relative;
+  width: 90vw;
+  z-index: 2; }
+  .minifesto h2 {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+    font-weight: bold; }
+  .minifesto p {
+    font-size: 15px;
+    margin-top: 12px;
+    line-height: 1.6; }
+
+body {
+  background: #503556;
+  background: linear-gradient(180deg, #503556 0%, #38213e 50%); }
 
 img {
   display: block; }

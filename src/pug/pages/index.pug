@@ -4,20 +4,19 @@ block content
   div(
     class="w-full h-full fixed flex items-center" 
     id="loading"
-    style="background-color: #50545d; z-index: 100;"
+    style="background-color: #000; z-index: 100;"
   )
     img(
       class="w-32 sm:w-64 m-auto inline-block max-w-xs" 
-      src="/images/badge-logo.png"
+      src="/images/coalescence-badge.svg"
     )
   header.parallax-header.overflow-hidden.relative.flex
     .absolute.title-container.w-full.h-full.pin-t.pin-r.flex.z-40
       img(
         class="layer-1-5 z-30 m-auto w-4/5 sm:w-1/2 md:w-2/5 relative primary-title hidden"
         src="/images/title_landing.svg")
-      h1(
-        class="layer-1-5 z-30 m-auto relative primary-title"
-      ) Coalescence      
+      div.layer-1-5.z-30.m-auto.relative.primary-title.text-center
+        h1 Coalescence
     img(
       class="layer-1 absolute w-full z-30 pin-b"
       src="/images/header/layer-1.png")
@@ -38,20 +37,37 @@ block content
     p.f3 In the evening, join everyone for a communal dinner before dancing the night away.
     p.f3 Like anything, Coalescence is what you make it. We ask that every Coalescee contribute in some way or another--whether its leading an activity, organizing a gear exchange or throwing a camp party.
     p.f3 Together, we coalesce.
-  .section
-    h2.f4 Iconography row
+  .section.iconography-row
+    .icon-text-lock
+      
   .section
     h2 Principles
+    p Reduce, reuse, then recycle
+    p Leave no trace
+    p Use the least amount of resources
+    p Cause the least amount of harm
+    p Contribute with intention/radical contribution
   .section
     h2 Outdoor activities
+    p Camping & Lodging - join us on a guided hike to a small water fall or set out in your own and explore everything the Sierra Nevadas has to offer.
+    p Hiking - join us on a guided hike to a small water fall or set out in your own and explore everything the Sierra Nevadas has to offer.
+    p Climbing - ascend the Sierra’s rocky cliffs with our guided instructors, who are there to train the beginner and root on the experienced climber. 
+    p Mountain Biking - ride hundreds of miles of single track throughout the Sierra Nevadas at China Basin Mountain Park. Rent or bring your own bikes and gear and then take a gondola to the top, ride down and repeat! 
+    p Yoga - build and deepen your connection with the outdoors through yoga and meditation. Practicing yoga in nature will nourish your soul and heighten your consciousness. 
   .section
-    h2 Camping
+    h2 Community
+    p I'm baby hoodie ramps cliche succulents. Hella hashtag gluten-free, pour-over chartreuse bicycle rights twee wayfarers tote bag listicle scenester artisan dreamcatcher ramps. Succulents sustainable taxidermy, scenester whatever schlitz truffaut chartreuse lumbersexual echo park cred skateboard retro craft beer drinking vinegar. Literally ramps migas, butcher heirloom enamel pin swag direct trade farm-to-table 3 wolf moon succulents four loko vinyl. Neutra man bun tbh affogato, biodiesel banjo kitsch live-edge kinfolk irony cronut tote bag bushwick quinoa. Cardigan selfies snackwave wolf keffiyeh trust fund iPhone raclette fashion axe.
+  .section
+    h2 Social Responsibility
+    p In being good stewards of the land, we partner with local conservation and environmental organizations to preserve the lands we use throughout the weekend. 
   .section
     h2 Music & The Arts
+    p Enjoy music and art as we intertwine the two with nature creating a deeper, more intimate experience. 
   .section
-    h2 Outdoor activities
+    h2.white #CoalescenceFest
+      include ../modules/instagram.pug
   .section
-    h2 #CoalescenceFest 
+    h2 FAQs 
   .div(class="relative block overflow-hidden flex flex-wrap w-full justify-center")
     section(
       class="w-full h-full relative block" id="footerparallax"
@@ -61,7 +77,7 @@ block content
       img(class="layer-3-foot absolute w-full z-10 pin-b" src="/images/footer/layer-3.png")
   .section.bg-mineralGreen
     h2.Merriweather.white Stay up to date with us 
-    p.white By visiting this site and sending a message to 
+    p.mt-3.white By visiting this site and sending a message to 
       a(href="mailto:Coalescence@gmail.com") Coalescence@gmail.com
 
     
