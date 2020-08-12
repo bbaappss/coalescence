@@ -631,7 +631,7 @@ $(window).on("load", function () {
   //header animations
 
   var layer_four = TweenMax.to('.layer-4', 2, {
-    y: '30%',
+    y: '-20%',
     ease: Power0.easeNone
   });
 
@@ -643,7 +643,7 @@ $(window).on("load", function () {
 
 
   var layer_two = TweenMax.to('.layer-2', 2, {
-    y: '20%',
+    y: '10%',
     ease: Power0.easeNone
   });
 

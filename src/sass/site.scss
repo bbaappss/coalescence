@@ -4,8 +4,7 @@
 @import 'modules/*';
 
 body {
-    background: rgb(251, 191, 109);
-    background: linear-gradient(180deg, rgba(251, 191, 109, 1) 0%, rgba(56, 33, 62, 1) 50%);
+    // background: rgb(251, 191, 109);
 }
 
 img {
@@ -40,4 +39,13 @@ img {
 
 a {
     color: $white;
+}
+
+.grinduro-rip {
+    background: linear-gradient(180deg, #503556 0%, rgba(56, 33, 62, 1) 50%);
+    color: white;
+}
+
+body {
+    background: linear-gradient(180deg, #f7ca9a 0%, #f79a34 50%);
 }

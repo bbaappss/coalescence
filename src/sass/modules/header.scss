@@ -26,6 +26,10 @@
 
 header {
 
+    &.grinduro {
+        background: #efddeb;
+    }
+
     h1,
     span {
         color: white;
@@ -52,6 +56,19 @@ header {
     }
 
     .primary-title {
-        margin-top: 14vw;
+        margin-top: 20vw;
+        margin-left: 5vw;
+        width: 50vw;
+    }
+
+}
+
+@media (min-width: 768px) {
+    header {
+        .primary-title {
+            margin-top: 2vw;
+            margin-left: 2vw;
+            width: 50vw;
+        }
     }
 }

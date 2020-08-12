@@ -1,15 +1,18 @@
 .minifesto {
-    background: white;
     border-radius: 8px;
     margin: 0 auto;
     position: relative;
-    width: 90vw;
     z-index: 2;
+
+    &.grinduro {
+        color: white;
+
+    }
 
     h2 {
         display: inline-block;
         padding-bottom: 8px;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
         font-weight: bold;
     }
 
