@@ -1,25 +1,26 @@
 .minifesto {
     border-radius: 8px;
+    color: $darkGreen;
     margin: 0 auto;
     position: relative;
     z-index: 2;
 
     &.grinduro {
         color: white;
-
     }
 
     h2 {
         display: inline-block;
         padding-bottom: 8px;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $darkGreen;
         font-weight: bold;
+        font-size: 46px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 20px;
+        letter-spacing: 2px;
         margin-top: 12px;
-        line-height: 1.6;
     }
 
 }

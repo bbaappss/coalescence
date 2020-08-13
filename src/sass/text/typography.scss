@@ -1,10 +1,43 @@
+@font-face {
+    font-family: KelptA1-ExtraBold;
+    src: url("/fonts/KelptA1-ExtraBold.woff") format("woff"),
+        url("/fonts/KelptA1-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: KelptA1-Bold;
+    src: url("/fonts/KelptA1-Bold.woff") format("woff"),
+        url("/fonts/KelptA1-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: KelptA2-Bold;
+    src: url("/fonts/KelptA2-Bold.woff") format("woff"),
+        url("/fonts/KelptA2-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: KelptA2-ExtraBold;
+    src: url("/fonts/KelptA2-ExtraBold.woff") format("woff"),
+        url("/fonts/KelptA2-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: KelptA3-Regular;
+    src: url("/fonts/KelptA3-Regular.woff") format("woff"),
+        url("/fonts/KelptA3-Regular.ttf") format("truetype");
+}
+
 body {
-    font-family: 'PT Sans', Sans-Serif;
+    font-family: 'KelptA3-Regular', Sans-Serif;
     font-weight: normal;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Julius Sans One', Sans-Serif;
-    font-weight: bold;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'KelptA1-Bold',
+        Sans-Serif;
 }
