@@ -172,8 +172,9 @@ header .primary-title {
     font-weight: bold;
     font-size: 46px; }
   .minifesto p {
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
     margin-top: 12px; }
 
 img {
