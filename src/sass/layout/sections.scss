@@ -1,14 +1,25 @@
 .section {
+    color: $darkGreen;
     padding: 24px;
 
     h2 {
-        margin-bottom: 12px;
+        display: inline-block;
+        border-bottom: 2px solid $darkGreen;
+        font-weight: bold;
+        font-size: 46px;
+
+        &.no-underline {
+            border-bottom: 0;
+        }
     }
 
     p {
-        line-height: 28px;
-        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-top: 16px;
     }
+
 }
 
 .section>.section {

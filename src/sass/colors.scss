@@ -1,13 +1,14 @@
 $black: #000;
 $white: #fff;
-$white: #fff;
 
 $edward: #9BABAA;
 $sandyBrown: #F8A667;
 $mineralGreen: #476B5D;
 $rawSienna: #D47042;
 $fireFly: #0B242B;
-$darkGreen: rgba(46, 67, 70, 1);
+$darkGreen: rgba(32, 62, 68, 1);
+$salmon: rgba(246, 165, 144, 1);
+
 
 .black {
     color: $black;
@@ -64,6 +65,10 @@ $darkGreen: rgba(46, 67, 70, 1);
 
 .bg-fireFly {
     background-color: $fireFly;
+}
+
+.bg-salmon {
+    background-color: $salmon;
 }
 
 .icon.white {
