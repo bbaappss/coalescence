@@ -204,3 +204,9 @@ a {
 .grinduro-rip {
   background: linear-gradient(180deg, #503556 0%, #38213e 50%);
   color: white; }
+
+.rsvp-and-menu {
+  position: absolute;
+  color: #203e44;
+  z-index: 2;
+  right: 0; }

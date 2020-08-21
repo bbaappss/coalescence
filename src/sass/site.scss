@@ -45,3 +45,10 @@ a {
     background: linear-gradient(180deg, #503556 0%, rgba(56, 33, 62, 1) 50%);
     color: white;
 }
+
+.rsvp-and-menu {
+    position: absolute;
+    color: $darkGreen;
+    z-index: 2;
+    right: 0;
+}
