@@ -119,15 +119,6 @@ h5 {
   .section {
     padding: 2vw 10vw; } }
 
-.disconnect-reconnect h2 {
-  font-size: 16px;
-  border-bottom: 0;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  text-transform: capitalize;
-  margin: 36px 0 24px; }
-
 @media screen and (max-width: 576px) {
   header.parallax-header {
     height: 350px !important; } }
@@ -147,7 +138,7 @@ h5 {
   align-items: center; }
 
 header {
-  background: linear-gradient(180deg, rgba(246, 221, 159, 0.842174) 0%, #fae5c0 22%, #e9dcc9 38%, #5ab8e7 54%, #4f7366 84%, #476a5c 100%); }
+  background: linear-gradient(180deg, #ffaf44 0%, #fcbf6d 13%, #fcd184 55%, #fcbf6d 82%, #6b7b5f 91%, #476a5c 100%); }
   header.grinduro {
     background: #efddeb; }
   header h1,
@@ -169,6 +160,8 @@ header {
     margin-top: 15vw;
     margin-left: 5vw;
     width: 72vw; }
+  header .layer-2 {
+    bottom: -50px; }
 
 @media (min-width: 768px) {
   header .primary-title {
@@ -178,6 +171,7 @@ header {
 
 .minifesto {
   margin: 0 auto;
+  padding-top: 74px;
   position: relative; }
   .minifesto.grinduro {
     color: white; }
