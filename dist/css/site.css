@@ -90,11 +90,12 @@ h5 {
   font-family: 'KelptA1-Bold', Sans-Serif; }
 
 .section {
-  color: #203e44;
+  background-color: #476a5c;
+  color: white;
   padding: 24px; }
   .section h2 {
     display: inline-block;
-    border-bottom: 2px solid #203e44;
+    border-bottom: 2px solid #fff;
     font-weight: bold;
     font-size: 46px; }
     .section h2.no-underline {
@@ -118,6 +119,15 @@ h5 {
   .section {
     padding: 2vw 10vw; } }
 
+.disconnect-reconnect h2 {
+  font-size: 16px;
+  border-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  text-transform: capitalize;
+  margin: 36px 0 24px; }
+
 @media screen and (max-width: 576px) {
   header.parallax-header {
     height: 350px !important; } }
@@ -136,31 +146,29 @@ h5 {
 .title-container {
   align-items: center; }
 
-header.grinduro {
-  background: #efddeb; }
-
-header h1,
-header span {
-  color: white;
-  display: block;
-  text-shadow: -2px 1px 7px black; }
-
-header h1 {
-  font-weight: bold;
-  font-size: 10vw; }
-
-header span {
-  text-transform: uppercase; }
-  header span.disconnect {
-    font-size: 5.8vw;
-    margin-top: 36px; }
-  header span.reconnect {
-    font-size: 7.5vw; }
-
-header .primary-title {
-  margin-top: 20vw;
-  margin-left: 5vw;
-  width: 50vw; }
+header {
+  background: linear-gradient(180deg, rgba(246, 221, 159, 0.842174) 0%, #fae5c0 22%, #e9dcc9 38%, #5ab8e7 54%, #4f7366 84%, #476a5c 100%); }
+  header.grinduro {
+    background: #efddeb; }
+  header h1,
+  header span {
+    color: white;
+    display: block;
+    text-shadow: -2px 1px 7px black; }
+  header h1 {
+    font-weight: bold;
+    font-size: 10vw; }
+  header span {
+    text-transform: uppercase; }
+    header span.disconnect {
+      font-size: 5.8vw;
+      margin-top: 36px; }
+    header span.reconnect {
+      font-size: 7.5vw; }
+  header .primary-title {
+    margin-top: 15vw;
+    margin-left: 5vw;
+    width: 72vw; }
 
 @media (min-width: 768px) {
   header .primary-title {
@@ -169,10 +177,8 @@ header .primary-title {
     width: 50vw; } }
 
 .minifesto {
-  border-radius: 8px;
   margin: 0 auto;
-  position: relative;
-  z-index: 2; }
+  position: relative; }
   .minifesto.grinduro {
     color: white; }
 
@@ -204,6 +210,3 @@ a {
 .grinduro-rip {
   background: linear-gradient(180deg, #503556 0%, #38213e 50%);
   color: white; }
-
-body {
-  background: linear-gradient(180deg, #f7ca9a 0%, #f79a34 50%); }
