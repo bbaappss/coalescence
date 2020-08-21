@@ -119,6 +119,32 @@ h5 {
   .section {
     padding: 2vw 10vw; } }
 
+.burger-and-fries-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 0 0;
+  right: 12px;
+  position: absolute;
+  width: 100%;
+  z-index: 2; }
+  .burger-and-fries-container .burger-and-fries {
+    display: flex;
+    align-items: center; }
+  .burger-and-fries-container .rsvp {
+    border: 1px solid black;
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    margin-right: 12px; }
+    .burger-and-fries-container .rsvp span {
+      display: block;
+      padding-top: 6px; }
+  .burger-and-fries-container .burger {
+    display: block;
+    position: relative;
+    width: 28px;
+    line-height: 0; }
+
 @media screen and (max-width: 576px) {
   header.parallax-header {
     height: 350px !important; } }
@@ -157,9 +183,9 @@ header {
     header span.reconnect {
       font-size: 7.5vw; }
   header .primary-title {
-    margin-top: 15vw;
+    margin-top: 19vw;
     margin-left: 5vw;
-    width: 72vw; }
+    width: 62vw; }
   header .layer-2 {
     bottom: -50px; }
 

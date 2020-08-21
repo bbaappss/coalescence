@@ -1,0 +1,34 @@
+.burger-and-fries-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0 0;
+    right: 12px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+
+    .burger-and-fries {
+        display: flex;
+        align-items: center;
+    }
+
+    .rsvp {
+        border: 1px solid black;
+        color: black;
+        padding: 6px 24px;
+        text-decoration: none;
+        margin-right: 12px;
+
+        span {
+            display: block;
+            padding-top: 6px;
+        }
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        width: 28px;
+        line-height: 0;
+    }
+}

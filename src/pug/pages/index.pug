@@ -11,11 +11,12 @@ block content
       src="/images/coalescence-badge.svg"
     )
   .coalesce-body
-    .rsvp-and-menu
-      a.rsvp(href="http://google.com")
-        span RSVP
-      a.burger
-        span hamburger          
+    .burger-and-fries-container
+      .burger-and-fries
+        a.rsvp(href="http://google.com" target="_blank") 
+          span RSVP
+        button.burger(href="javascript:void(0);")
+          include ../../images/icons/menu.svg
     header.parallax-header.relative.flex
       .absolute.title-container.w-full.h-full.pin-t.pin-r.flex.z-40
         img(
