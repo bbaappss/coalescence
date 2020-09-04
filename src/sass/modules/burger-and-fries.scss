@@ -36,7 +36,6 @@ html:not([data-scroll='0']) {
         padding: 4px 20px;
         border-radius: 4px;
         text-decoration: none;
-        margin-right: 12px;
 
         span {
             display: block;
@@ -49,5 +48,6 @@ html:not([data-scroll='0']) {
         position: relative;
         width: 20px;
         line-height: 0;
+        margin-left: 12px;
     }
 }
