@@ -119,21 +119,32 @@ h5 {
   .section {
     padding: 2vw 10vw; } }
 
+html:not([data-scroll='0']) .burger-and-fries-container {
+  background: #fff; }
+  html:not([data-scroll='0']) .burger-and-fries-container .logo-in-navigation {
+    opacity: 1; }
+
 .burger-and-fries-container {
   display: flex;
-  justify-content: flex-end;
-  margin: 12px 0 0;
-  right: 12px;
+  justify-content: space-between;
+  padding: 12px;
   position: fixed;
+  transition: 0.3s ease-in;
   width: 100%;
   z-index: 2; }
+  .burger-and-fries-container .logo-in-navigation {
+    max-width: 94px;
+    opacity: 0;
+    margin-left: 12px;
+    transition: .3s ease-in; }
   .burger-and-fries-container .burger-and-fries {
     display: flex;
     align-items: center; }
   .burger-and-fries-container .rsvp {
     border: 1px solid black;
     color: black;
-    padding: 6px 24px;
+    padding: 4px 20px;
+    border-radius: 4px;
     text-decoration: none;
     margin-right: 12px; }
     .burger-and-fries-container .rsvp span {
@@ -142,7 +153,7 @@ h5 {
   .burger-and-fries-container .burger {
     display: block;
     position: relative;
-    width: 28px;
+    width: 20px;
     line-height: 0; }
 
 @media screen and (max-width: 576px) {
@@ -236,3 +247,10 @@ a {
   color: #203e44;
   z-index: 2;
   right: 0; }
+
+#loading {
+  background: linear-gradient(180deg, #ffaf44 0%, #fcbf6d 13%, #fcd184 55%, #fcbf6d 100%);
+  width: 100vw;
+  height: 100vh; }
+  #loading img {
+    width: 70vw; }

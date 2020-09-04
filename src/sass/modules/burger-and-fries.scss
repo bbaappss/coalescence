@@ -1,11 +1,29 @@
+html:not([data-scroll='0']) {
+    .burger-and-fries-container {
+        background: #fff;
+
+        .logo-in-navigation {
+            opacity: 1;
+        }
+    }
+
+}
+
 .burger-and-fries-container {
     display: flex;
-    justify-content: flex-end;
-    margin: 12px 0 0;
-    right: 12px;
+    justify-content: space-between;
+    padding: 12px;
     position: fixed;
+    transition: 0.3s ease-in;
     width: 100%;
     z-index: 2;
+
+    .logo-in-navigation {
+        max-width: 94px;
+        opacity: 0;
+        margin-left: 12px;
+        transition: .3s ease-in;
+    }
 
     .burger-and-fries {
         display: flex;
@@ -15,7 +33,8 @@
     .rsvp {
         border: 1px solid black;
         color: black;
-        padding: 6px 24px;
+        padding: 4px 20px;
+        border-radius: 4px;
         text-decoration: none;
         margin-right: 12px;
 
@@ -28,7 +47,7 @@
     .burger {
         display: block;
         position: relative;
-        width: 28px;
+        width: 20px;
         line-height: 0;
     }
 }
