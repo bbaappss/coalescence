@@ -103,7 +103,7 @@ h4.light {
   .section h3 {
     font-size: 36px; }
   .section p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin-top: 16px; }
 
@@ -128,14 +128,14 @@ html:not([data-scroll='0']) .burger-and-fries-container {
 .burger-and-fries-container {
   display: flex;
   justify-content: space-between;
-  height: 48px;
+  height: 60px;
   padding: 12px;
   position: fixed;
   transition: 0.3s ease-in;
   width: 100%;
   z-index: 2; }
   .burger-and-fries-container .logo-in-navigation {
-    max-width: 94px;
+    max-width: 100px;
     opacity: 0;
     margin-left: 12px;
     transition: .3s ease-in; }
@@ -154,7 +154,7 @@ html:not([data-scroll='0']) .burger-and-fries-container {
   .burger-and-fries-container .burger {
     display: block;
     position: relative;
-    width: 20px;
+    width: 28px;
     line-height: 0;
     margin-left: 12px; }
 

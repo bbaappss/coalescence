@@ -12,7 +12,7 @@ html:not([data-scroll='0']) {
 .burger-and-fries-container {
     display: flex;
     justify-content: space-between;
-    height: 48px;
+    height: 60px;
     padding: 12px;
     position: fixed;
     transition: 0.3s ease-in;
@@ -20,7 +20,7 @@ html:not([data-scroll='0']) {
     z-index: 2;
 
     .logo-in-navigation {
-        max-width: 94px;
+        max-width: 100px;
         opacity: 0;
         margin-left: 12px;
         transition: .3s ease-in;
@@ -47,7 +47,7 @@ html:not([data-scroll='0']) {
     .burger {
         display: block;
         position: relative;
-        width: 20px;
+        width: 28px;
         line-height: 0;
         margin-left: 12px;
     }
