@@ -197,6 +197,9 @@ header {
     margin-top: 19vw;
     margin-left: 5vw;
     width: 62vw; }
+  header .layer-1 {
+    bottom: -30px;
+    right: -20px; }
   header .layer-2 {
     bottom: -50px; }
 
