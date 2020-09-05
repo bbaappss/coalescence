@@ -29,7 +29,15 @@
 }
 
 body {
-    font-family: 'KelptA3-Regular', Sans-Serif;
+    font-family: 'Cutive Mono',
+        monospace,
+        Sans-Serif;
+    font-weight: normal;
+}
+
+.btn {
+    font-family: 'KelptA3-Regular',
+        Sans-Serif;
     font-weight: normal;
 }
 
@@ -40,4 +48,8 @@ h4,
 h5 {
     font-family: 'KelptA1-Bold',
         Sans-Serif;
+}
+
+h4.light {
+    font-family: KelptA3-Regular;
 }

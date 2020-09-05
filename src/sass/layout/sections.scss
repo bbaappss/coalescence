@@ -3,21 +3,34 @@
     color: white;
     padding: 24px;
 
+    &.light {
+        background-color: white;
+        color: rgba(71, 106, 92, 1);
+
+        h2 {
+            border-bottom: 2px solid rgba(71, 106, 92, 1);
+
+        }
+    }
+
     h2 {
         display: inline-block;
         border-bottom: 2px solid $white;
         font-weight: bold;
-        font-size: 46px;
+        font-size: 44px;
 
         &.no-underline {
             border-bottom: 0;
         }
     }
 
+    h3 {
+        font-size: 36px;
+    }
+
     p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.5;
-        letter-spacing: 1px;
         margin-top: 16px;
     }
 

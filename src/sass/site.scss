@@ -4,7 +4,7 @@
 @import 'modules/*';
 
 body {
-    // background: rgb(251, 191, 109);
+    overflow-x: hidden;
 }
 
 img {
@@ -61,4 +61,32 @@ a {
     img {
         width: 70vw;
     }
+}
+
+.sponsor-logo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    img {
+        max-width: 33vw;
+    }
+}
+
+.rsvp-big {
+    border-radius: 24px;
+    display: block;
+    background-color: rgba(71, 106, 92, 1);
+    font-family: 'KelptA1-Bold',
+        Sans-Serif;
+
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 12px 8px 12px;
+    letter-spacing: .5px;
+    margin: 24px auto;
+
 }

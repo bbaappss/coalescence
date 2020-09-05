@@ -46,18 +46,6 @@
 .icon.white {
   fill: white; }
 
-.button {
-  background: white;
-  box-shadow: -2px 2px 2px #000;
-  color: black;
-  border: 0;
-  border-radius: 16px;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 800;
-  padding: 16px 24px;
-  text-decoration: none; }
-
 @font-face {
   font-family: KelptA1-ExtraBold;
   src: url("/fonts/KelptA1-ExtraBold.woff") format("woff"), url("/fonts/KelptA1-ExtraBold.ttf") format("truetype"); }
@@ -79,6 +67,10 @@
   src: url("/fonts/KelptA3-Regular.woff") format("woff"), url("/fonts/KelptA3-Regular.ttf") format("truetype"); }
 
 body {
+  font-family: 'Cutive Mono', monospace, Sans-Serif;
+  font-weight: normal; }
+
+.btn {
   font-family: 'KelptA3-Regular', Sans-Serif;
   font-weight: normal; }
 
@@ -89,21 +81,30 @@ h4,
 h5 {
   font-family: 'KelptA1-Bold', Sans-Serif; }
 
+h4.light {
+  font-family: KelptA3-Regular; }
+
 .section {
   background-color: #476a5c;
   color: white;
   padding: 24px; }
+  .section.light {
+    background-color: white;
+    color: #476a5c; }
+    .section.light h2 {
+      border-bottom: 2px solid #476a5c; }
   .section h2 {
     display: inline-block;
     border-bottom: 2px solid #fff;
     font-weight: bold;
-    font-size: 46px; }
+    font-size: 44px; }
     .section h2.no-underline {
       border-bottom: 0; }
+  .section h3 {
+    font-size: 36px; }
   .section p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    letter-spacing: 1px;
     margin-top: 16px; }
 
 .section > .section {
@@ -198,8 +199,7 @@ header {
     margin-left: 5vw;
     width: 62vw; }
   header .layer-1 {
-    bottom: -30px;
-    right: -20px; }
+    bottom: -30px; }
   header .layer-2 {
     bottom: -50px; }
 
@@ -215,6 +215,9 @@ header {
   position: relative; }
   .minifesto.grinduro {
     color: white; }
+
+body {
+  overflow-x: hidden; }
 
 img {
   display: block; }
@@ -257,3 +260,24 @@ a {
   height: 100vh; }
   #loading img {
     width: 70vw; }
+
+.sponsor-logo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center; }
+  .sponsor-logo-grid img {
+    max-width: 33vw; }
+
+.rsvp-big {
+  border-radius: 24px;
+  display: block;
+  background-color: #476a5c;
+  font-family: 'KelptA1-Bold', Sans-Serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 12px 8px 12px;
+  letter-spacing: .5px;
+  margin: 24px auto; }
