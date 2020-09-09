@@ -632,10 +632,10 @@ $(window).on("load", function () {
     ease: Power0.easeNone
   });
 
-  var sliding_background = TweenMax.to('.sliding-background-inner img', 16, {
-    x: '-50%',
+  var sliding_background = TweenMax.to('.sliding-background-inner img', 35, {
+    x: '-100%',
     ease: Power0.easeNone
-  }).repeat(-1).yoyo( true );
+  }).repeat(-1);
 
   var layer_three = TweenMax.to('.layer-3', 2, {
     y: '-10%',
