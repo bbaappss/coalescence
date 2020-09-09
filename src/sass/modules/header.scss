@@ -62,8 +62,9 @@ header {
         width: 62vw;
     }
 
-    .layer-1 {
-        bottom: -30px;
+    .layer-1,
+    .layer-5 {
+            bottom: -30px;
     }
 
     .layer-2 {
@@ -79,5 +80,20 @@ header {
             margin-left: 2vw;
             width: 50vw;
         }
+    }
+}
+
+
+.sliding-background {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 20vw;
+    left: 0;
+    z-index: 20;
+    .sliding-background-inner {   
+        display: flex;   
+        height: 100%;
     }
 }

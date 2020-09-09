@@ -133,7 +133,7 @@ html:not([data-scroll='0']) .burger-and-fries-container {
   position: fixed;
   transition: 0.3s ease-in;
   width: 100%;
-  z-index: 2; }
+  z-index: 100; }
   .burger-and-fries-container .logo-in-navigation {
     max-width: 100px;
     opacity: 0;
@@ -199,7 +199,8 @@ header {
     margin-top: 19vw;
     margin-left: 5vw;
     width: 62vw; }
-  header .layer-1 {
+  header .layer-1,
+  header .layer-5 {
     bottom: -30px; }
   header .layer-2 {
     bottom: -50px; }
@@ -209,6 +210,18 @@ header {
     margin-top: 2vw;
     margin-left: 2vw;
     width: 50vw; } }
+
+.sliding-background {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 20vw;
+  left: 0;
+  z-index: 20; }
+  .sliding-background .sliding-background-inner {
+    display: flex;
+    height: 100%; }
 
 .minifesto {
   margin: 0 auto;

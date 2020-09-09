@@ -17,7 +17,7 @@ html:not([data-scroll='0']) {
     position: fixed;
     transition: 0.3s ease-in;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
 
     .logo-in-navigation {
         max-width: 100px;
