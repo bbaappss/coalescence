@@ -6,6 +6,9 @@ html:not([data-scroll='0']) {
         .logo-in-navigation {
             transform: translate(0, 0) scale(1);
         }
+        .burger    svg path {
+            fill: rgba(71, 106, 92, 1);
+        }
     }
 
 }

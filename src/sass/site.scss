@@ -91,4 +91,19 @@ a {
     letter-spacing: .5px;
     margin: 24px auto;
     text-decoration: none;
+    z-index: 2;
+    position: relative;
+}
+
+.footer-image {
+    padding: 0 0 24px;
+    z-index: 0;
+}
+
+.instagram {
+    padding: 36px 24px 20px;
+    h2 {
+        font-size: 30px;
+        padding-bottom: 16px;
+    }
 }

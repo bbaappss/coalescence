@@ -130,6 +130,8 @@ html:not([data-scroll='0']) .burger-and-fries-container {
   border-bottom: 2px solid #476a5c; }
   html:not([data-scroll='0']) .burger-and-fries-container .logo-in-navigation {
     transform: translate(0, 0) scale(1); }
+  html:not([data-scroll='0']) .burger-and-fries-container .burger svg path {
+    fill: #476a5c; }
 
 .burger-and-fries-container {
   border-bottom: 2px solid transparent;
@@ -303,4 +305,16 @@ a {
   padding: 14px 12px 8px 12px;
   letter-spacing: .5px;
   margin: 24px auto;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 2;
+  position: relative; }
+
+.footer-image {
+  padding: 0 0 24px;
+  z-index: 0; }
+
+.instagram {
+  padding: 36px 24px 20px; }
+  .instagram h2 {
+    font-size: 30px;
+    padding-bottom: 16px; }
