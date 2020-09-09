@@ -37,10 +37,23 @@
         margin-top: 16px;
     }
 
+    &.stay-active {
+        padding-bottom: 80px;
+        padding-top: 60px;
+    }
+
     &.sponsors {
         padding-bottom: 80px;
         padding-top: 60px;
     }
+
+    &.powers-combined {
+        padding-top: 60px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+
 }
 
 .section>.section {

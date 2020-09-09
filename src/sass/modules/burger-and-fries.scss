@@ -1,13 +1,13 @@
 html:not([data-scroll='0']) {
     .burger-and-fries-container {
-        background: #fff;
-        border-bottom: 2px solid rgba(71, 106, 92, 1);
+        background: rgba(255, 255, 255, .95);
+        border-bottom: 2px solid rgba(71, 106, 92, .95);
 
         .logo-in-navigation {
             transform: translate(0, 0) scale(1);
         }
         .burger    svg path {
-            fill: rgba(71, 106, 92, 1);
+            // fill: rgba(71, 106, 92, 1);
         }
     }
 
