@@ -93,19 +93,24 @@ h4.light {
     color: #476a5c; }
     .section.light h2 {
       border-bottom: 2px solid #476a5c; }
+  .section.join-us {
+    padding-bottom: 0; }
   .section h2 {
     display: inline-block;
     border-bottom: 2px solid #fff;
     font-weight: bold;
-    font-size: 44px; }
+    font-size: 30px; }
     .section h2.no-underline {
       border-bottom: 0; }
   .section h3 {
     font-size: 36px; }
   .section p {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
     margin-top: 16px; }
+  .section.sponsors {
+    padding-bottom: 80px;
+    padding-top: 60px; }
 
 .section > .section {
   padding-left: 0;
@@ -121,17 +126,19 @@ h4.light {
     padding: 2vw 10vw; } }
 
 html:not([data-scroll='0']) .burger-and-fries-container {
-  background: #fff; }
+  background: #fff;
+  border-bottom: 2px solid #476a5c; }
   html:not([data-scroll='0']) .burger-and-fries-container .logo-in-navigation {
     transform: translate(0, 0) scale(1); }
 
 .burger-and-fries-container {
+  border-bottom: 2px solid transparent;
   display: flex;
   justify-content: space-between;
   height: 60px;
   padding: 12px;
   position: fixed;
-  transition: 0.3s ease-in;
+  transition: 0.6s ease-in;
   width: 100%;
   z-index: 10; }
   .burger-and-fries-container .logo-in-navigation {
@@ -226,9 +233,8 @@ header {
 .minifesto {
   margin: 0 auto;
   padding-top: 74px;
+  padding-bottom: 60px;
   position: relative; }
-  .minifesto.grinduro {
-    color: white; }
 
 body {
   overflow-x: hidden; }
@@ -282,7 +288,9 @@ a {
   align-items: center;
   justify-items: center; }
   .sponsor-logo-grid img {
-    max-width: 33vw; }
+    max-width: 30vw;
+    max-height: 30vw;
+    margin-top: 7vw; }
 
 .rsvp-big {
   border-radius: 24px;

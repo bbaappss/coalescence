@@ -26,7 +26,7 @@ $(window).on("load", function () {
     ease: Power0.easeNone
   });
 
-  var sliding_background = TweenMax.to('.sliding-background-inner img', 20, {
+  var sliding_background = TweenMax.to('.sliding-background-inner img', 16, {
     x: '-50%',
     ease: Power0.easeNone
   }).repeat(-1).yoyo( true );
@@ -114,9 +114,7 @@ const debounce = (fn) => {
 // Reads out the scroll position and stores it in the data attribute
 // so we can use it in our stylesheets
 const storeScroll = () => {
-  if (window.scrollY >= 0) {
-    document.documentElement.dataset.scroll = window.scrollY;    
-  }
+  document.documentElement.dataset.scroll = window.scrollY;    
 }
 
 // Listen for new scroll events, here we debounce our `storeScroll` function
