@@ -133,7 +133,7 @@ html:not([data-scroll='0']) .burger-and-fries-container {
   position: fixed;
   transition: 0.3s ease-in;
   width: 100%;
-  z-index: 100; }
+  z-index: 10; }
   .burger-and-fries-container .logo-in-navigation {
     max-width: 100px;
     margin-left: 12px;
