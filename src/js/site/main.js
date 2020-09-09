@@ -27,7 +27,7 @@ $(window).on("load", function () {
   });
 
   var sliding_background = TweenMax.to('.sliding-background-inner img', 20, {
-    x: '-100%',
+    x: '-50%',
     ease: Power0.easeNone
   }).repeat(-1).yoyo( true );
 

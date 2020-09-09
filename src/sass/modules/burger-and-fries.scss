@@ -3,7 +3,7 @@ html:not([data-scroll='0']) {
         background: #fff;
 
         .logo-in-navigation {
-            opacity: 1;
+            transform: translate(0, 0) scale(1);
         }
     }
 
@@ -21,9 +21,10 @@ html:not([data-scroll='0']) {
 
     .logo-in-navigation {
         max-width: 100px;
-        opacity: 0;
+        // opacity: 0;
         margin-left: 12px;
         transition: .3s ease-in;
+        transform: translate(14vw, 15vw) scale(2);
     }
 
     .burger-and-fries {

@@ -123,7 +123,7 @@ h4.light {
 html:not([data-scroll='0']) .burger-and-fries-container {
   background: #fff; }
   html:not([data-scroll='0']) .burger-and-fries-container .logo-in-navigation {
-    opacity: 1; }
+    transform: translate(0, 0) scale(1); }
 
 .burger-and-fries-container {
   display: flex;
@@ -136,9 +136,9 @@ html:not([data-scroll='0']) .burger-and-fries-container {
   z-index: 100; }
   .burger-and-fries-container .logo-in-navigation {
     max-width: 100px;
-    opacity: 0;
     margin-left: 12px;
-    transition: .3s ease-in; }
+    transition: .3s ease-in;
+    transform: translate(14vw, 15vw) scale(2); }
   .burger-and-fries-container .burger-and-fries {
     display: flex;
     align-items: center; }
@@ -216,7 +216,7 @@ header {
   width: 100%;
   overflow: hidden;
   position: absolute;
-  top: 20vw;
+  top: 15vw;
   left: 0;
   z-index: 20; }
   .sliding-background .sliding-background-inner {
