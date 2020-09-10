@@ -4,12 +4,24 @@ block content
   div(
     class="fixed flex items-center bg-salmon" 
     id="loading"
-    style="z-index: 100;"
+    style="z-index: 50000;"
   )
     img(
       class="m-auto inline-block max-w-xs" 
       src="/images/coalescence-logo.svg"
     )
+  .
+    <div class="fries menu-hide custom-type grind-dark-bg animate-smooth animate-dur-md">
+      <div class="flex flex-col justify-center items-center h-full">
+        <a class="current-page" href="https://grinduro.com/">Home</a>
+        <a class="" href="#locations">Locations</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="news.html">News</a>
+        <a class="" href="get-stoked.html">Get
+          Stoked</a>
+        <a class="" href="contact.html">Contact</a>
+      </div>
+    </div>
   .coalesce-body
     #navigation.burger-and-fries-container
       img(
@@ -17,10 +29,11 @@ block content
         src="/images/coalescence-logo.svg"
       )
       .burger-and-fries
-        //- a.btn.rsvp(href="http://google.com" target="_blank") 
-          span RSVP at Eventbrite
-        button.burger(href="javascript:void(0);")
-          include ../../images/icons/menu.svg
+        <button class="hamburger hamburger--collapse js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> 
     header.parallax-header.relative
       .sliding-background
         .sliding-background-inner

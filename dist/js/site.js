@@ -606,6 +606,14 @@ var Lantern = (function() {
 
 $(window).on("load", function () {
 
+  $(".js-hamburger").click(function() {
+    $(this).toggleClass("is-active");
+    $(".fries").toggleClass("show");
+    $("body").toggleClass("modal-open");
+    $("body").toggleClass("menu-open");
+  })
+
+
   header_p_height = $('.layer-1').height();
   $("header").height(header_p_height);
 
