@@ -187,7 +187,7 @@ body.menu-open {
   overflow-y: hidden; }
   html:not([data-scroll='0']) body.menu-open .logo-in-navigation,
   body.menu-open .logo-in-navigation {
-    transform: translate(30vw, 30vw) scale(2); }
+    transform: translate(30vw, 20vw) scale(2); }
   html:not([data-scroll='0']) body.menu-open .burger-and-fries-container,
   body.menu-open .burger-and-fries-container {
     border-bottom: 2px solid transparent; }

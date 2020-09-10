@@ -79,7 +79,7 @@ html:not([data-scroll='0']) body.menu-open,
 body.menu-open {
     overflow-y:hidden;
     .logo-in-navigation {
-        transform: translate(30vw, 30vw) scale(2);
+        transform: translate(30vw, 20vw) scale(2);
     }
     .burger-and-fries-container {
         border-bottom: 2px solid transparent;
