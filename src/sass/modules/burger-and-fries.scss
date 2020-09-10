@@ -22,6 +22,12 @@ html:not([data-scroll='0']) {
     width: 100%;
     z-index: 200;
 
+    .hamburger-inner, 
+    .hamburger-inner::before, 
+    .hamburger-inner::after {
+        height: 3px;
+    }
+
     .logo-in-navigation {
         max-width: 100px;
         // opacity: 0;
@@ -89,15 +95,18 @@ body.menu-open {
 .menu-hide {
     background: white;
     height: 100vh;
+    opacity: 0;
     right: -100%;
     position: fixed;
     top: 0px;
-    width: 100%;
     z-index: 50;
+    width: 100%;
+    transition: .3s ease-in;
  }
 
  .menu-hide.show {
-     right: 0;
+    opacity: 1;
+    right: 0;
  }
 
  .fries {
@@ -110,3 +119,4 @@ body.menu-open {
         Sans-Serif;
     }
  }
+

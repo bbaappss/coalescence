@@ -148,6 +148,10 @@ html:not([data-scroll='0']) .burger-and-fries-container {
   transition: 0.6s ease-in;
   width: 100%;
   z-index: 200; }
+  .burger-and-fries-container .hamburger-inner,
+  .burger-and-fries-container .hamburger-inner::before,
+  .burger-and-fries-container .hamburger-inner::after {
+    height: 3px; }
   .burger-and-fries-container .logo-in-navigation {
     max-width: 100px;
     margin-left: 12px;
@@ -195,13 +199,16 @@ body.menu-open {
 .menu-hide {
   background: white;
   height: 100vh;
+  opacity: 0;
   right: -100%;
   position: fixed;
   top: 0px;
+  z-index: 50;
   width: 100%;
-  z-index: 50; }
+  transition: .3s ease-in; }
 
 .menu-hide.show {
+  opacity: 1;
   right: 0; }
 
 .fries a {
