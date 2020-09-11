@@ -78,21 +78,19 @@ a {
 }
 
 .rsvp-big {
-    border-radius: 24px;
-    display: block;
     background-color: rgba(71, 106, 92, 1);
-    font-family: 'KelptA1-Bold',
-        Sans-Serif;
-
-    font-size: 24px;
+    border-radius: 24px;
     color: white;
-    text-align: center;
-    padding: 14px 12px 8px 12px;
+    display: block;
+    font-family: 'KelptA1-Bold', Sans-Serif;
+    font-size: 24px;
     letter-spacing: .5px;
+    padding: 14px 12px 8px 12px;
     margin: 24px auto;
+    text-align: center;
     text-decoration: none;
-    z-index: 2;
     position: relative;
+    z-index: 2;
 }
 
 .footer-image {
