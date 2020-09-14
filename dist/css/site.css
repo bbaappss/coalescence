@@ -1,223 +1,3 @@
-.black {
-  color: #000; }
-
-.white {
-  color: #fff; }
-
-.edward {
-  color: #9BABAA; }
-
-.sandyBrown {
-  color: #F8A667; }
-
-.mineralGreen {
-  color: #476B5D; }
-
-.rawSienna {
-  color: #D47042; }
-
-.fireFly {
-  color: #0B242B; }
-
-.bg-black {
-  background-color: #000; }
-
-.bg-white {
-  background-color: #fff; }
-
-.bg-edward {
-  background-color: #9BABAA; }
-
-.bg-sandyBrown {
-  background-color: #F8A667; }
-
-.bg-mineralGreen {
-  background-color: #476B5D; }
-
-.bg-rawSienna {
-  background-color: #D47042; }
-
-.bg-fireFly {
-  background-color: #0B242B; }
-
-.bg-salmon {
-  background-color: #f6a590; }
-
-.icon.white {
-  fill: white; }
-
-@font-face {
-  font-family: KelptA1-ExtraBold;
-  src: url("/fonts/KelptA1-ExtraBold.woff") format("woff"), url("/fonts/KelptA1-ExtraBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: KelptA1-Bold;
-  src: url("/fonts/KelptA1-Bold.woff") format("woff"), url("/fonts/KelptA1-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: KelptA2-Bold;
-  src: url("/fonts/KelptA2-Bold.woff") format("woff"), url("/fonts/KelptA2-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: KelptA2-ExtraBold;
-  src: url("/fonts/KelptA2-ExtraBold.woff") format("woff"), url("/fonts/KelptA2-ExtraBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: KelptA3-Regular;
-  src: url("/fonts/KelptA3-Regular.woff") format("woff"), url("/fonts/KelptA3-Regular.ttf") format("truetype"); }
-
-body {
-  font-family: 'Cutive Mono', monospace, Sans-Serif;
-  font-weight: normal; }
-
-.btn {
-  font-family: 'KelptA3-Regular', Sans-Serif;
-  font-weight: normal; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'KelptA1-Bold', Sans-Serif; }
-
-h4.light {
-  font-family: KelptA3-Regular; }
-
-.section {
-  background-color: #476a5c;
-  color: white;
-  padding: 24px; }
-  .section.light {
-    background-color: white;
-    color: #476a5c; }
-    .section.light h2 {
-      border-bottom: 2px solid #476a5c; }
-  .section.join-us {
-    padding-bottom: 0; }
-  .section h2 {
-    display: inline-block;
-    border-bottom: 2px solid #fff;
-    font-weight: bold;
-    font-size: 30px; }
-    .section h2.no-underline {
-      border-bottom: 0; }
-  .section h3 {
-    font-size: 36px; }
-  .section p {
-    font-size: 24px;
-    line-height: 1.5;
-    margin-top: 16px; }
-  .section.stay-active {
-    padding-bottom: 80px;
-    padding-top: 60px; }
-  .section.sponsors {
-    padding-bottom: 80px;
-    padding-top: 60px; }
-  .section.powers-combined {
-    padding-top: 60px; }
-    .section.powers-combined h2 {
-      font-size: 30px; }
-
-.section > .section {
-  padding-left: 0;
-  padding-right: 0; }
-  .section > .section:not(:first-child) {
-    padding-top: 0; }
-
-.min-80vh {
-  min-height: 80vh; }
-
-@media (min-width: 1280px) {
-  .section {
-    padding: 2vw 10vw; } }
-
-html:not([data-scroll='0']) .burger-and-fries-container {
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 2px solid rgba(71, 106, 92, 0.95); }
-  html:not([data-scroll='0']) .burger-and-fries-container .logo-in-navigation {
-    transform: translate(0, 0) scale(1); }
-
-.burger-and-fries-container {
-  border-bottom: 2px solid transparent;
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  padding: 12px;
-  position: fixed;
-  transition: 0.6s ease-in;
-  width: 100%;
-  z-index: 200; }
-  .burger-and-fries-container .hamburger-inner,
-  .burger-and-fries-container .hamburger-inner::before,
-  .burger-and-fries-container .hamburger-inner::after {
-    height: 3px; }
-  .burger-and-fries-container .logo-in-navigation {
-    max-width: 100px;
-    margin-left: 12px;
-    transition: .3s ease-in;
-    transform: translate(14vw, 15vw) scale(2); }
-  .burger-and-fries-container .burger-and-fries {
-    display: flex;
-    align-items: center; }
-  .burger-and-fries-container .rsvp {
-    border: 1px solid black;
-    color: black;
-    padding: 4px 20px;
-    border-radius: 4px;
-    text-decoration: none; }
-    .burger-and-fries-container .rsvp span {
-      display: block;
-      padding-top: 6px; }
-  .burger-and-fries-container .burger {
-    display: block;
-    position: relative;
-    width: 28px;
-    line-height: 0;
-    margin-left: 12px;
-    z-index: 101; }
-    .burger-and-fries-container .burger span:nth-child(2) {
-      transform: translateX(100vw); }
-    .burger-and-fries-container .burger.active span:nth-child(1) {
-      transform: translateX(100vw); }
-    .burger-and-fries-container .burger.active span:nth-child(2) {
-      transform: translateX(0); }
-
-body.modal-open {
-  overflow-y: hidden; }
-
-html:not([data-scroll='0']) body.menu-open,
-body.menu-open {
-  overflow-y: hidden; }
-  html:not([data-scroll='0']) body.menu-open .logo-in-navigation,
-  body.menu-open .logo-in-navigation {
-    transform: translate(30vw, 20vw) scale(2); }
-  html:not([data-scroll='0']) body.menu-open .burger-and-fries-container,
-  body.menu-open .burger-and-fries-container {
-    border-bottom: 2px solid transparent; }
-
-.menu-hide {
-  background: white;
-  height: 100vh;
-  opacity: 0;
-  right: -100%;
-  position: fixed;
-  top: 0px;
-  z-index: 50;
-  width: 100%;
-  transition: .3s ease-in; }
-
-.menu-hide.show {
-  opacity: 1;
-  right: 0; }
-
-.fries a {
-  color: #476a5c;
-  font-size: 36px;
-  padding: 12px 0;
-  text-decoration: none;
-  font-family: 'KelptA1-Bold', Sans-Serif; }
-
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1031,6 +811,248 @@ body.menu-open {
 .hamburger--vortex-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg); }
+
+.black {
+  color: #000; }
+
+.white {
+  color: #fff; }
+
+.edward {
+  color: #9BABAA; }
+
+.sandyBrown {
+  color: #F8A667; }
+
+.mineralGreen {
+  color: #476B5D; }
+
+.rawSienna {
+  color: #D47042; }
+
+.fireFly {
+  color: #0B242B; }
+
+.bg-black {
+  background-color: #000; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-edward {
+  background-color: #9BABAA; }
+
+.bg-sandyBrown {
+  background-color: #F8A667; }
+
+.bg-mineralGreen {
+  background-color: #476B5D; }
+
+.bg-rawSienna {
+  background-color: #D47042; }
+
+.bg-fireFly {
+  background-color: #0B242B; }
+
+.bg-salmon {
+  background-color: #f6a590; }
+
+.icon.white {
+  fill: white; }
+
+@font-face {
+  font-family: KelptA1-ExtraBold;
+  src: url("/fonts/KelptA1-ExtraBold.woff") format("woff"), url("/fonts/KelptA1-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: KelptA1-Bold;
+  src: url("/fonts/KelptA1-Bold.woff") format("woff"), url("/fonts/KelptA1-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: KelptA2-Bold;
+  src: url("/fonts/KelptA2-Bold.woff") format("woff"), url("/fonts/KelptA2-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: KelptA2-ExtraBold;
+  src: url("/fonts/KelptA2-ExtraBold.woff") format("woff"), url("/fonts/KelptA2-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: KelptA3-Regular;
+  src: url("/fonts/KelptA3-Regular.woff") format("woff"), url("/fonts/KelptA3-Regular.ttf") format("truetype"); }
+
+body {
+  font-family: 'Cutive Mono', monospace, Sans-Serif;
+  font-weight: normal; }
+
+.btn {
+  font-family: 'KelptA3-Regular', Sans-Serif;
+  font-weight: normal; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'KelptA1-Bold', Sans-Serif; }
+
+h4.light {
+  font-family: KelptA3-Regular; }
+
+.section {
+  background-color: #476a5c;
+  color: white;
+  padding: 24px; }
+  .section.light {
+    background-color: white;
+    color: #476a5c; }
+    .section.light h2 {
+      border-bottom: 2px solid #476a5c; }
+  .section.join-us {
+    padding-bottom: 0; }
+  .section h2 {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    font-size: 30px; }
+    .section h2.no-underline {
+      border-bottom: 0; }
+  .section h3 {
+    font-size: 36px; }
+  .section p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 16px; }
+  .section.stay-active {
+    padding-bottom: 80px;
+    padding-top: 60px; }
+  .section.sponsors {
+    padding-bottom: 80px;
+    padding-top: 60px; }
+  .section.powers-combined {
+    padding-top: 60px; }
+    .section.powers-combined h2 {
+      font-size: 30px; }
+
+.section > .section {
+  padding-left: 0;
+  padding-right: 0; }
+  .section > .section:not(:first-child) {
+    padding-top: 0; }
+
+.min-80vh {
+  min-height: 80vh; }
+
+@media (min-width: 1280px) {
+  .section {
+    padding: 2vw 10vw; } }
+
+html:not([data-scroll='0']) .burger-and-fries-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid rgba(71, 106, 92, 0.95); }
+  html:not([data-scroll='0']) .burger-and-fries-container .logo-in-navigation {
+    width: 120px;
+    transform: translate(4vw, 10px); }
+
+.burger-and-fries-container {
+  border-bottom: 2px solid transparent;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 12px;
+  position: fixed;
+  transition: 0.6s ease-in;
+  width: 100%;
+  z-index: 200; }
+  .burger-and-fries-container .hamburger-inner,
+  .burger-and-fries-container .hamburger-inner::before,
+  .burger-and-fries-container .hamburger-inner::after {
+    height: 3px; }
+  .burger-and-fries-container .logo-in-navigation {
+    left: 0;
+    top: 0;
+    position: absolute;
+    transform: translate(4vw, 20vw);
+    transition: .3s ease-in;
+    width: 200px; }
+  .burger-and-fries-container .burger-and-fries {
+    display: flex;
+    align-items: center; }
+  .burger-and-fries-container .rsvp {
+    border: 1px solid black;
+    color: black;
+    padding: 4px 20px;
+    border-radius: 4px;
+    text-decoration: none; }
+    .burger-and-fries-container .rsvp span {
+      display: block;
+      padding-top: 6px; }
+  .burger-and-fries-container .burger {
+    display: block;
+    position: relative;
+    width: 28px;
+    line-height: 0;
+    margin-left: 12px;
+    z-index: 101; }
+    .burger-and-fries-container .burger span:nth-child(2) {
+      transform: translateX(100vw); }
+    .burger-and-fries-container .burger.active span:nth-child(1) {
+      transform: translateX(100vw); }
+    .burger-and-fries-container .burger.active span:nth-child(2) {
+      transform: translateX(0); }
+
+body.modal-open {
+  overflow-y: hidden; }
+
+html:not([data-scroll='0']) body.menu-open,
+body.menu-open {
+  overflow-y: hidden; }
+  html:not([data-scroll='0']) body.menu-open .logo-in-navigation,
+  body.menu-open .logo-in-navigation {
+    left: 50%;
+    transform: translate(-50%, 120px);
+    width: 240px; }
+  html:not([data-scroll='0']) body.menu-open .burger-and-fries-container,
+  body.menu-open .burger-and-fries-container {
+    border-bottom: 2px solid transparent; }
+
+.menu-hide {
+  background: white;
+  height: 100vh;
+  opacity: 0;
+  right: -100%;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  width: 100%;
+  transition: .3s ease-in; }
+
+.menu-hide.show {
+  opacity: 1;
+  right: 0; }
+
+.fries a {
+  color: #476a5c;
+  font-size: 36px;
+  padding: 12px 0;
+  text-decoration: none;
+  font-family: 'KelptA1-Bold', Sans-Serif; }
+
+.hamburger {
+  display: flex; }
+
+.hamburger-box {
+  width: 32px; }
+
+.burger-and-fries-container .hamburger-inner, .burger-and-fries-container .hamburger-inner::before, .burger-and-fries-container .hamburger-inner::after {
+  height: 2px; }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 32px;
+  background-color: #000;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; }
 
 @media screen and (max-width: 576px) {
   header.parallax-header {
