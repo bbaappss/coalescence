@@ -65,23 +65,22 @@ a {
 }
 
 .sponsor-logo-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
+    column-gap: 8vw;;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-
+    width: 100%;
     img {
-        max-width: 30vw;
         max-height: 30vw;
         margin-top: 7vw;
     }
 }
 
 .rsvp-big {
-    background-color: rgba(71, 106, 92, 1);
+    background-color: white;
     border-radius: 24px;
-    color: white;
+    color: $green;
     display: block;
     font-family: 'KelptA1-Bold', Sans-Serif;
     font-size: 24px;
@@ -95,8 +94,15 @@ a {
 }
 
 .footer-image {
-    padding: 0 0 24px;
+    padding: 60px 0;
     z-index: 0;
+}
+
+.footer-note {
+    display: block;
+    margin: 24px auto;
+    text-align: center;
+    width: 100%;
 }
 
 .instagram {

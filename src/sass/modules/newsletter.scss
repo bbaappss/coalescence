@@ -1,0 +1,36 @@
+.newsletter {
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+#mc_embed_signup form {
+    padding: 24px 0 0;
+    .mc-field-group {
+        padding-top: 12px;
+        width: 100%;
+    }
+
+    textarea {
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    .button {
+        background-color: white;
+        border-radius: 24px;
+        color: $green;
+        display: block;
+        font-family: 'KelptA1-Bold', Sans-Serif;
+        font-size: 24px;
+        height: inherit;
+        letter-spacing: .5px;
+        padding: 14px 12px 8px 12px;
+        margin: 24px auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#mc_embed_signup .indicates-required {
+    text-align: inherit;
+    font-size: 14px;
+}

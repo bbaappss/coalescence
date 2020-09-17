@@ -25,7 +25,7 @@ $(window).on("load", function () {
   //header animations
 
   var layer_five = TweenMax.to('.layer-5', 2, {
-    y: '20%',
+    y: '50%',
     ease: Power0.easeNone
   });
 

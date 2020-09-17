@@ -827,6 +827,9 @@
 .mineralGreen {
   color: #476B5D; }
 
+.green {
+  color: #476a5c; }
+
 .rawSienna {
   color: #D47042; }
 
@@ -847,6 +850,9 @@
 
 .bg-mineralGreen {
   background-color: #476B5D; }
+
+.bg-green {
+  background-color: #476a5c; }
 
 .bg-rawSienna {
   background-color: #D47042; }
@@ -926,7 +932,7 @@ h4.light {
     padding-bottom: 80px;
     padding-top: 60px; }
   .section.sponsors {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     padding-top: 60px; }
   .section.powers-combined {
     padding-top: 60px; }
@@ -1121,9 +1127,37 @@ header {
 
 .minifesto {
   margin: 0 auto;
-  padding-top: 74px;
-  padding-bottom: 60px;
-  position: relative; }
+  padding-top: 74px; }
+
+.newsletter {
+  padding-bottom: 20px;
+  padding-top: 60px; }
+
+#mc_embed_signup form {
+  padding: 24px 0 0; }
+  #mc_embed_signup form .mc-field-group {
+    padding-top: 12px;
+    width: 100%; }
+  #mc_embed_signup form textarea {
+    border-radius: 4px;
+    width: 100%; }
+  #mc_embed_signup form .button {
+    background-color: white;
+    border-radius: 24px;
+    color: #476a5c;
+    display: block;
+    font-family: 'KelptA1-Bold', Sans-Serif;
+    font-size: 24px;
+    height: inherit;
+    letter-spacing: .5px;
+    padding: 14px 12px 8px 12px;
+    margin: 24px auto;
+    text-align: center;
+    width: 100%; }
+
+#mc_embed_signup .indicates-required {
+  text-align: inherit;
+  font-size: 14px; }
 
 body {
   overflow-x: hidden; }
@@ -1171,20 +1205,20 @@ a {
     width: 70vw; }
 
 .sponsor-logo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   align-items: center;
-  justify-items: center; }
+  column-gap: 8vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  width: 100%; }
   .sponsor-logo-grid img {
-    max-width: 30vw;
     max-height: 30vw;
     margin-top: 7vw; }
 
 .rsvp-big {
-  background-color: #476a5c;
+  background-color: white;
   border-radius: 24px;
-  color: white;
+  color: #476a5c;
   display: block;
   font-family: 'KelptA1-Bold', Sans-Serif;
   font-size: 24px;
@@ -1197,8 +1231,14 @@ a {
   z-index: 2; }
 
 .footer-image {
-  padding: 0 0 24px;
+  padding: 60px 0;
   z-index: 0; }
+
+.footer-note {
+  display: block;
+  margin: 24px auto;
+  text-align: center;
+  width: 100%; }
 
 .instagram {
   padding: 36px 24px 20px; }
