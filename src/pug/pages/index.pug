@@ -4,12 +4,22 @@ block content
   div(
     class="fixed flex items-center bg-salmon" 
     id="loading"
-    style="z-index: 100;"
+    style="z-index: 50000;"
   )
     img(
       class="m-auto inline-block max-w-xs" 
       src="/images/coalescence-logo.svg"
     )
+  .
+    <div class="fries menu-hide custom-type grind-dark-bg animate-smooth animate-dur-md">
+      <div class="flex flex-col justify-center items-center h-full">
+        <a class="" href="https://grinduro.com/">RSVP</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="news.html">Activities</a>
+        <a class="" href="news.html">FAQs</a>
+        <a class="" href="contact.html">Contact</a>
+      </div>
+    </div>
   .coalesce-body
     #navigation.burger-and-fries-container
       img(
@@ -17,127 +27,83 @@ block content
         src="/images/coalescence-logo.svg"
       )
       .burger-and-fries
-        //- a.btn.rsvp(href="http://google.com" target="_blank") 
-          span RSVP at Eventbrite
-        button.burger(href="javascript:void(0);")
-          include ../../images/icons/menu.svg
-    header.parallax-header.relative.flex
-      .absolute.title-container.w-full.h-full.pin-t.pin-r.flex.z-40
-        img(
-          class="layer-1-5 z-30 m-auto w-4/5 sm:w-1/2 md:w-2/5 relative primary-title"
-          src="/images/coalescence-logo.svg"
-        )
+        <button class="hamburger hamburger--collapse js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> 
+    header.parallax-header.relative
+      .sliding-background
+        .sliding-background-inner
+          img(
+            src="/images/drafts/D/Coalescence-Website-Page-3.png"
+          )
+          img(
+            src="/images/drafts/D/Coalescence-Website-Page-3.png"
+          )
+          img(
+            src="/images/drafts/D/Coalescence-Website-Page-3.png"
+          )
       img(
         class="layer-1 absolute w-full z-30 pin-b"
-        src="/images/drafts/E/Coalescence-Website-Page-1-B.png"
+        src="/images/drafts/F/Coalescence-Website-Page-1.png"
+      )
+      img(
+        class="layer-5 absolute w-full z-20 pin-b"
+        src="/images/drafts/F/Coalescence-Website-Page-1-Sun-2.png"
       )
       img(
         class="layer-2 absolute w-full z-40 pin-b"
         src="/images/drafts/D/Coalescence-Website-Page-2.png"
       )
-      img(
-        class="layer-4 absolute w-full z-0 pin-b"
-        src="/images/drafts/D/Coalescence-Website-Page-3.png"
-      )
       .circle-bg
   .section.minifesto
-    h2.f2.tc DISCONNECT <br> TO RECONNECT
-    p.f3 Join us on a "choose your own adventure" style campout as we celebrate nature through camping, outdoor activities and community. Over three days, we can begin to reconnect with ourselves, each other and nature.   
+    h2 DISCONNECT TO RECONNECT
+    p Coalescence is a choose-your-own-adventure style campout focused on celebrating nature through outdoor activities and fellowship. 
+    p Try something new or show off your skills by hiking, climbing, kayaking, mountain biking, swimming, or practicing yoga. Over our three days together in the mountains, we can begin to reconnect with ourselves, each other, and with nature.
+  img(
+    src="/images/campfire.JPG"
+  )
   .section
+    h2 Radical Cooperation
+    p Like anything in life, Coalescence is what you make it. 
+    p We ask that every Coalescee contribute in some way — whether you’re leading an activity, picking up trash, helping coordinate a meal, organizing a gear exchange, or throwing a camp party, the magic of Coalescence doesn’t happen without you! 
+    p As you prepare for the weekend, brainstorm how you can make the experience more special not only for yourself but for those you’ll be sharing it with.
+  .section
+    h2 Join us June 11-13, 2021. 
+    p RSVP today and be one of the few founding Coalescees.
+    a.rsvp-big(target="_blank", href="http://www.eventbrite.com") RSVP
+  .section.sponsors.light
     h3 Sponsored by
     .sponsor-logo-grid
       img(
           class="sponsor"
-          src="/images/sponsors/tecate-4-logo-png-transparent.png"
+          src="/images/sponsors/TTBC-Registered+Logo-BLK_green.png"
       )
       img(
           class="sponsor"
-          src="/images/sponsors/divinitree-white.png"
+          src="/images/sponsors/DT_Logo_SBUpdate_green.png"
       )
       img(
           class="sponsor"
-          src="/images/sponsors/go-pro.png"
+          src="/images/sponsors/1280px-Trek_Bicycle_Corporation_logo.svg_green.png"
       )
       img(
           class="sponsor"
-          src="/images/sponsors/dasani.png"
+          src="/images/sponsors/GoPro-Logo_green.png"
       )
-  .section.light
-    h2.f2.tc Try something new
-    p.f3 or refine your skills by climbing, hiking, kayaking, mountain biking, swimming, or practicing yoga. At night, join everyone for a communal dinner or do your own thing before dancing and listening to music.
+      img(
+          class="sponsor"
+          src="/images/sponsors/Logo_of_CamelBak_Products_LLC_green.png"
+      )
+      img(
+          class="sponsor"
+          src="/images/sponsors/clifbar-logo.0f7b43f.svg"
+      )
+  .section.bg-mineralGreen.newsletter
+    include ../modules/newsletter.pug
   img(
       class="footer-image"
-      src="/images/dangit-bobby.jpg"
+      src="/images/footer/footer2.png"
   )
-  .section
-    h2.f2.tc Volunteer <br/> your talent
-    p.f3 Like anything, Coalescence is what you make it. We ask every Coalescee contribute somehow--whether its leading an activity, organizing a gear exchange or throwing a camp party. 
-  img(
-      class="footer-image"
-      src="/images/camping-hacks.jpg"
-  )
-  .section.light
-    .text-center
-      h4.light.text-center Join us
-      h2.f2.text-center June 11-14, 2021
-    p.f3 This is our inaugural camp out. Be one of the few founding members that shape Coalescence.
-    a.rsvp-big(target="_blank", href="http://www.eventbrite.com") RSVP on EVENT BRITE
-
-
-  //- .section
-    h2 Principles
-    p Reduce, reuse, then recycle
-    p Leave no trace
-    p Use the least amount of resources
-    p Cause the least amount of harm
-    p Contribute with intention/radical contribution
-  //- .section
-    h2 Outdoor activities
-    p Camping & Lodging - join us on a guided hike to a small water fall or set out in your own and explore everything the Sierra Nevadas has to offer.
-    p Hiking - join us on a guided hike to a small water fall or set out in your own and explore everything the Sierra Nevadas has to offer.
-    p Climbing - ascend the Sierra’s rocky cliffs with our guided instructors, who are there to train the beginner and root on the experienced climber. 
-    p Mountain Biking - ride hundreds of miles of single track throughout the Sierra Nevadas at China Basin Mountain Park. Rent or bring your own bikes and gear and then take a gondola to the top, ride down and repeat! 
-    p Yoga - build and deepen your connection with the outdoors through yoga and meditation. Practicing yoga in nature will nourish your soul and heighten your consciousness. 
-  //- .section
-    h2 Community
-    p I'm baby hoodie ramps cliche succulents. Hella hashtag gluten-free, pour-over chartreuse bicycle rights twee wayfarers tote bag listicle scenester artisan dreamcatcher ramps. Succulents sustainable taxidermy, scenester whatever schlitz truffaut chartreuse lumbersexual echo park cred skateboard retro craft beer drinking vinegar. Literally ramps migas, butcher heirloom enamel pin swag direct trade farm-to-table 3 wolf moon succulents four loko vinyl. Neutra man bun tbh affogato, biodiesel banjo kitsch live-edge kinfolk irony cronut tote bag bushwick quinoa. Cardigan selfies snackwave wolf keffiyeh trust fund iPhone raclette fashion axe.
-  //- .section
-    h2 Social Responsibility
-    p In being good stewards of the land, we partner with local conservation and environmental organizations to preserve the lands we use throughout the weekend. 
-  //- .section
-    h2 Music & The Arts
-    p Enjoy music and art as we intertwine the two with nature creating a deeper, more intimate experience. 
-  //- .section
-    h2.white.no-underline #CoalescenceFest
-    include ../modules/instagram.pug
-  //- .section
-    h2 FAQs 
-  img(
-      class="footer-image"
-      src="/images/footer/footer.png"
-  )
-  //- .div(class="relative block overflow-hidden flex flex-wrap w-full justify-center")
-  //-   section(
-  //-     class="w-full h-full relative block" id="footerparallax"
-  //-   )
-  //-     img(class="layer-1-foot absolute w-full z-30 pin-b" src="/images/footer/layer-1.png")
-  //-     img(class="layer-2-foot absolute w-full z-20 pin-b" src="/images/footer/layer-2.png")
-  //-     img(class="layer-3-foot absolute w-full z-10 pin-b" src="/images/footer/layer-3.png")
-  .section.bg-mineralGreen
-    h3.Merriweather.white Stay up to date with us 
-    .
-      <form class="w-full max-w-sm">
-        <label>Enter your email address to join our newsletter</label>
-        <div class="flex items-center bg-white py-2">
-          <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none bg-white" type="text" placeholder="dangitbobby@gmail.com" aria-label="Email address">
-          <button class="fancy-text flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
-            Sign Up
-          </button>
-        </div>
-      </form>
-  //- include ../modules/instagram.pug
-
-
-    
-    
-    
+  p.footer-note Coalescence 2020 ©

@@ -9,15 +9,18 @@
 
         h2 {
             border-bottom: 2px solid rgba(71, 106, 92, 1);
-
         }
+    }
+
+    &.join-us {
+        padding-bottom: 0;
     }
 
     h2 {
         display: inline-block;
         border-bottom: 2px solid $white;
         font-weight: bold;
-        font-size: 44px;
+        font-size: 30px;
 
         &.no-underline {
             border-bottom: 0;
@@ -29,9 +32,26 @@
     }
 
     p {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.5;
         margin-top: 16px;
+    }
+
+    &.stay-active {
+        padding-bottom: 80px;
+        padding-top: 60px;
+    }
+
+    &.sponsors {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    &.powers-combined {
+        padding-top: 60px;
+        h2 {
+            font-size: 30px;
+        }
     }
 
 }
