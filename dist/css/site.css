@@ -1203,6 +1203,7 @@ header {
       border-bottom: 5px solid #476a5c; } }
 
 @media (min-width: 1600px) {
+  .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     transform: translate(20vw, 12px); }
   .burger-and-fries-container .menu-on-large {
