@@ -1137,20 +1137,18 @@ header {
   #mc_embed_signup form .mc-field-group {
     padding-top: 12px;
     width: 100%; }
+  #mc_embed_signup form input,
+  #mc_embed_signup form textarea {
+    border: 1px solid #476a5c; }
   #mc_embed_signup form textarea {
     border-radius: 4px;
     width: 100%; }
-  #mc_embed_signup form .button {
-    background-color: #476a5c;
+  #mc_embed_signup form .cta {
     border-radius: 24px;
     color: #fff;
-    display: block;
-    font-family: "KelptA1-Bold", Sans-Serif;
-    font-size: 24px;
     height: inherit;
     letter-spacing: 0.5px;
-    padding: 14px 12px 8px 12px;
-    margin: 24px auto;
+    margin: 24px 0 0;
     text-align: center;
     width: 100%; }
 
@@ -1168,26 +1166,6 @@ header {
     padding-bottom: 0; }
   .section.rsvp p {
     margin-top: 0; }
-
-.rsvp-big {
-  align-items: center;
-  justify-content: center;
-  background-color: #476a5c;
-  border-radius: 24px;
-  color: #fff;
-  display: flex;
-  font-family: "KelptA1-Bold", Sans-Serif;
-  font-size: 24px;
-  height: inherit;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  padding: 14px 12px 8px 12px;
-  margin: 24px auto;
-  text-align: center;
-  width: 100%; }
-  .rsvp-big span {
-    margin-left: 4px;
-    margin-top: 5px; }
 
 body {
   overflow-x: hidden; }
@@ -1261,3 +1239,30 @@ a {
     font-family: "KelptA3-Regular";
     font-size: 28px;
     padding-bottom: 16px; }
+
+.cta {
+  align-items: center;
+  justify-content: center;
+  background-color: #476a5c;
+  border-radius: 24px;
+  color: #fff;
+  display: flex;
+  font-family: "KelptA1-Bold", Sans-Serif;
+  font-size: 24px;
+  height: inherit;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 14px 12px 8px 12px;
+  margin: 24px auto;
+  text-align: center;
+  width: 100%; }
+  .cta span {
+    margin-left: 4px;
+    margin-top: 5px; }
+
+@media (min-width: 768px) {
+  .cta {
+    padding: 14px 12px 6px 12px;
+    font-size: 36px;
+    max-width: 200px;
+    margin: 24px 0 0; } }
