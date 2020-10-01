@@ -969,6 +969,9 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
     width: 120px;
     transform: translate(4vw, 10px); }
 
+html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+  padding-top: 6px; }
+
 .burger-and-fries-container {
   border-bottom: 2px solid transparent;
   display: flex;
@@ -1151,11 +1154,11 @@ header {
     display: none; } }
 
 @media (min-width: 1280px) {
-  .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
-    padding-top: 6px;
     width: 200px;
-    transform: translate(4vw, 12px); }
+    transform: translate(4vw, 6px); }
+  .not-home .burger-and-fries-container .logo-in-navigation {
+    padding-top: 6px; }
   .burger-and-fries-container {
     height: 96px; }
     .burger-and-fries-container .burger-and-fries {
@@ -1365,3 +1368,58 @@ a {
     font-size: 36px;
     max-width: 200px;
     margin: 24px 0 0; } }
+
+@media (min-width: 1280px) {
+  .radical-cooperation {
+    position: relative; }
+    .radical-cooperation .section {
+      position: absolute;
+      width: 60%;
+      height: 600px;
+      top: 0;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; } }
+
+@media (min-width: 1280px) {
+  .radical-cooperation-2 {
+    display: flex; }
+    .radical-cooperation-2 > * {
+      width: 50vw; }
+    .radical-cooperation-2 img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+    .radical-cooperation-2 .section {
+      align-self: center;
+      background: white;
+      color: #476a5c; }
+      .radical-cooperation-2 .section h2 {
+        display: inline-block;
+        text-align: left;
+        margin: 24px auto;
+        color: #476a5c;
+        border-bottom: 3px solid #476a5c; } }
+
+@media (min-width: 1280px) {
+  .radical-cooperation-3 {
+    background: rgba(162, 201, 185, 0.2);
+    margin-bottom: -100px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse; }
+    .radical-cooperation-3 img {
+      margin-bottom: -60px; }
+    .radical-cooperation-3 .section {
+      margin-bottom: -496px;
+      margin-left: auto;
+      margin-right: auto;
+      background: transparent;
+      color: #476a5c;
+      width: 60%; }
+      .radical-cooperation-3 .section h2 {
+        color: #476a5c;
+        border-bottom: 3px solid #476a5c; } }

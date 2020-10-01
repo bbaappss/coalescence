@@ -11,6 +11,10 @@ html:not([data-scroll="0"]) {
   }
 }
 
+html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+  padding-top: 6px;
+}
+
 .burger-and-fries-container {
   border-bottom: 2px solid transparent;
   display: flex;
