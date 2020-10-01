@@ -35,10 +35,6 @@ header {
     rgba(71, 106, 92, 1) 100%
   );
 
-  &.grinduro {
-    background: #efddeb;
-  }
-
   h1,
   span {
     color: white;
@@ -124,7 +120,9 @@ header {
 }
 
 @media (min-width: 1280px) {
+  .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+    padding-top: 6px;
     width: 200px;
     transform: translate(4vw, 12px);
   }
@@ -159,7 +157,7 @@ header {
         margin-left: 24px;
       }
 
-      &:hover {
+      &:hover:not(.logo-in-navigation) {
         background-color: darken($orange, 10%);
         transform: translate(0, -2px);
       }
@@ -177,15 +175,19 @@ header {
     }
   }
 
-  html:not([data-scroll="0"]) .burger-and-fries-container a {
-    background-color: transparent;
-    color: $green;
-    &:hover {
-      background-color: $green;
-      color: $white;
-    }
-    &.active::after {
-      border-bottom: 5px solid $green;
+  .not-home,
+  html:not([data-scroll="0"]) {
+    .burger-and-fries-container a {
+      background-color: transparent;
+      color: $green;
+
+      &:hover:not(.logo-in-navigation) {
+        background-color: $green;
+        color: $white;
+      }
+      &.active::after {
+        border-bottom: 5px solid $green;
+      }
     }
   }
 }
@@ -198,5 +200,12 @@ header {
     .menu-on-large {
       margin-right: 10vw;
     }
+  }
+}
+
+.not-home {
+  .burger-and-fries-container a {
+    background-color: transparent;
+    color: $green;
   }
 }

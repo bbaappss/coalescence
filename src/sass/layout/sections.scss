@@ -100,3 +100,19 @@
     padding: 74px 80px;
   }
 }
+
+.about {
+  padding-top: 64px;
+}
+
+@media (min-width: 1280px) {
+  .about {
+    padding-top: 120px;
+    h2 {
+      text-align: left;
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}

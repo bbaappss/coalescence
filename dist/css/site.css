@@ -879,6 +879,9 @@ h5 {
 h4.light {
   font-family: KelptA3-Regular; }
 
+.not-home .section:first-of-type {
+  background-attachment: red; }
+
 .section {
   background-color: #476a5c;
   color: white;
@@ -945,9 +948,23 @@ h4.light {
   .section {
     padding: 74px 80px; } }
 
+.about {
+  padding-top: 64px; }
+
+@media (min-width: 1280px) {
+  .about {
+    padding-top: 120px; }
+    .about h2 {
+      text-align: left;
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0; } }
+
+.not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
   background: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid rgba(71, 106, 92, 0.95); }
+  .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     width: 120px;
     transform: translate(4vw, 10px); }
@@ -1077,8 +1094,6 @@ body.menu-open {
 
 header {
   background: linear-gradient(180deg, #ffaf44 0%, #fcbf6d 13%, #fcd184 55%, #fcbf6d 82%, #6b7b5f 91%, #476a5c 100%); }
-  header.grinduro {
-    background: #efddeb; }
   header h1,
   header span {
     color: white;
@@ -1136,7 +1151,9 @@ header {
     display: none; } }
 
 @media (min-width: 1280px) {
+  .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+    padding-top: 6px;
     width: 200px;
     transform: translate(4vw, 12px); }
   .burger-and-fries-container {
@@ -1161,7 +1178,7 @@ header {
       position: relative; }
       .burger-and-fries-container a:not(:first-child) {
         margin-left: 24px; }
-      .burger-and-fries-container a:hover {
+      .burger-and-fries-container a:hover:not(.logo-in-navigation) {
         background-color: #ea5711;
         transform: translate(0, -2px); }
       .burger-and-fries-container a.active::after {
@@ -1173,12 +1190,15 @@ header {
         border-bottom: 5px solid #fff;
         left: 0;
         bottom: 0; }
+  .not-home .burger-and-fries-container a,
   html:not([data-scroll="0"]) .burger-and-fries-container a {
     background-color: transparent;
     color: #476a5c; }
-    html:not([data-scroll="0"]) .burger-and-fries-container a:hover {
+    .not-home .burger-and-fries-container a:hover:not(.logo-in-navigation),
+    html:not([data-scroll="0"]) .burger-and-fries-container a:hover:not(.logo-in-navigation) {
       background-color: #476a5c;
       color: #fff; }
+    .not-home .burger-and-fries-container a.active::after,
     html:not([data-scroll="0"]) .burger-and-fries-container a.active::after {
       border-bottom: 5px solid #476a5c; } }
 
@@ -1187,6 +1207,10 @@ header {
     transform: translate(20vw, 12px); }
   .burger-and-fries-container .menu-on-large {
     margin-right: 10vw; } }
+
+.not-home .burger-and-fries-container a {
+  background-color: transparent;
+  color: #476a5c; }
 
 @media (min-width: 1080px) {
   .minifesto {
