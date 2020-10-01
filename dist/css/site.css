@@ -1119,6 +1119,11 @@ header {
     display: flex;
     height: 100%; }
 
+@media (min-width: 768px) {
+  .burger-and-fries-container .logo-in-navigation {
+    transform: translate(4vw, 8vw);
+    width: 50vw; } }
+
 .minifesto {
   margin: 0 auto;
   padding-top: 74px; }

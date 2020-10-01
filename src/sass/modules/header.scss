@@ -1,100 +1,112 @@
 @media screen and (max-width: 576px) {
-    header.parallax-header {
-        height: 350px !important;
-    }
+  header.parallax-header {
+    height: 350px !important;
+  }
 }
 
 @media screen and (max-width: 769px) {
-    header.parallax-header {
-        height: 700px;
-    }
+  header.parallax-header {
+    height: 700px;
+  }
 }
 
 @media screen and (max-width: 769px) {
-    header.parallax-header {
-        height: 600px;
-    }
+  header.parallax-header {
+    height: 600px;
+  }
 }
 
 .parallax-header {
-    z-index: 1;
+  z-index: 1;
 }
 
 .title-container {
-    align-items: center;
+  align-items: center;
 }
 
 header {
-    background: linear-gradient(180deg, rgba(255, 175, 68, 1) 0%, rgba(252, 191, 109, 1) 13%, rgba(252, 209, 132, 1) 55%, rgba(252, 191, 109, 1) 82%, rgba(107, 123, 95, 1) 91%, rgba(71, 106, 92, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 175, 68, 1) 0%,
+    rgba(252, 191, 109, 1) 13%,
+    rgba(252, 209, 132, 1) 55%,
+    rgba(252, 191, 109, 1) 82%,
+    rgba(107, 123, 95, 1) 91%,
+    rgba(71, 106, 92, 1) 100%
+  );
 
-    &.grinduro {
-        background: #efddeb;
+  &.grinduro {
+    background: #efddeb;
+  }
+
+  h1,
+  span {
+    color: white;
+    display: block;
+    text-shadow: -2px 1px 7px rgba(0, 0, 0, 1);
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 10vw;
+  }
+
+  span {
+    text-transform: uppercase;
+
+    &.disconnect {
+      font-size: 5.8vw;
+      margin-top: 36px;
     }
 
-    h1,
-    span {
-        color: white;
-        display: block;
-        text-shadow: -2px 1px 7px rgba(0, 0, 0, 1);
+    &.reconnect {
+      font-size: 7.5vw;
     }
+  }
 
-    h1 {
-        font-weight: bold;
-        font-size: 10vw;
-    }
+  .primary-title {
+    margin-top: 19vw;
+    margin-left: 5vw;
+    width: 6vw;
+  }
 
-    span {
-        text-transform: uppercase;
+  .layer-1,
+  .layer-5 {
+    bottom: -30px;
+  }
 
-        &.disconnect {
-            font-size: 5.8vw;
-            margin-top: 36px;
-        }
-
-        &.reconnect {
-            font-size: 7.5vw;
-        }
-    }
-
-    .primary-title {
-        margin-top: 19vw;
-        margin-left: 5vw;
-        width: 6vw;
-    }
-
-    .layer-1,
-    .layer-5 {
-            bottom: -30px;
-    }
-
-    .layer-2 {
-        bottom: -50px;
-    }
-
+  .layer-2 {
+    bottom: -50px;
+  }
 }
 
 @media (min-width: 768px) {
-    header {
-        .primary-title {
-            margin-top: 2vw;
-            margin-left: 2vw;
-            width: 50vw;
-        }
+  header {
+    .primary-title {
+      margin-top: 2vw;
+      margin-left: 2vw;
+      width: 50vw;
     }
+  }
 }
-
 
 .sliding-background {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 15vw;
+  left: 0;
+  z-index: 25;
+  .sliding-background-inner {
+    display: flex;
     height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 15vw;
-    left: 0;
-    z-index: 25;
-    .sliding-background-inner {   
-        display: flex;   
-        height: 100%;
-    }
+  }
 }
 
+@media (min-width: 768px) {
+  .burger-and-fries-container .logo-in-navigation {
+    transform: translate(4vw, 8vw);
+    width: 50vw;
+  }
+}
