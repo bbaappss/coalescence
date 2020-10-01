@@ -1,0 +1,35 @@
+.section.rsvp {
+  background: $fadedGreen;
+  color: $green;
+  h2 {
+    color: $green;
+    text-align: left;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+.rsvp-big {
+  align-items: center;
+  justify-content: center;
+  background-color: $green;
+  border-radius: 24px;
+  color: $white;
+  display: flex;
+  font-family: "KelptA1-Bold", Sans-Serif;
+  font-size: 24px;
+  height: inherit;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 14px 12px 8px 12px;
+  margin: 24px auto;
+  text-align: center;
+  width: 100%;
+  span {
+    margin-left: 4px;
+    margin-top: 5px;
+  }
+}

@@ -1,10 +1,14 @@
 .newsletter {
-  background: rgba(162, 201, 185, 0.2);
+  background: $fadedGreen;
   color: $green;
-  padding-bottom: 20px;
-  padding-top: 60px;
   h2 {
-    border-bottom-color: $green;
+    color: $green;
+    text-align: left;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
   }
 }
 
