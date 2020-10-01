@@ -2,7 +2,7 @@ extends ../template.pug
 
 block content
   div(
-    class="fixed flex items-center bg-salmon" 
+    class="fixed flex items-center" 
     id="loading"
     style="z-index: 50000;"
   )
@@ -10,16 +10,13 @@ block content
       class="m-auto inline-block max-w-xs" 
       src="/images/coalescence-logo.svg"
     )
-  .
-    <div class="fries menu-hide custom-type grind-dark-bg animate-smooth animate-dur-md">
-      <div class="flex flex-col justify-center items-center h-full">
-        <a class="" href="https://grinduro.com/">RSVP</a>
-        <a class="" href="about.html">About</a>
-        <a class="" href="news.html">Activities</a>
-        <a class="" href="news.html">FAQs</a>
-        <a class="" href="contact.html">Contact</a>
-      </div>
-    </div>
+  .fries.menu-hide.custom-type.animate-smooth.animate-dur-md
+    .flex.flex-col.justify-center.items-center.h-full
+      a(href="https://eventbrite.com/" target="_blank") RSVP
+      a(href="#" target="_blank") About
+      a(href="#" target="_blank") Activities
+      a(href="#" target="_blank") FAQ
+      a(href="#" target="_blank") Contact
   .coalesce-body
     #navigation.burger-and-fries-container
       img(
@@ -32,6 +29,12 @@ block content
             <span class="hamburger-inner"></span>
           </span>
         </button> 
+      .menu-on-large
+        a(href="#" target="_blank") About
+        a(href="#" target="_blank") Activities
+        a(href="#" target="_blank") FAQ
+        a(href="#" target="_blank") Contact
+        a(href="https://eventbrite.com/" target="_blank") RSVP
     header.parallax-header.relative
       .sliding-background
         .sliding-background-inner
@@ -58,6 +61,7 @@ block content
       )
       .circle-bg
   .section.minifesto
+    .inner
       h2 DISCONNECT TO RECONNECT
       p Coalescence is a choose-your-own-adventure style campout focused on celebrating nature through outdoor activities and fellowship. 
       p Try something new or show off your skills by hiking, climbing, kayaking, mountain biking, swimming, or practicing yoga. Over our three days together in the mountains, we can begin to reconnect with ourselves, each other, and with nature.
