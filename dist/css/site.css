@@ -819,22 +819,19 @@
   color: #fff; }
 
 .edward {
-  color: #9BABAA; }
+  color: #9babaa; }
 
 .sandyBrown {
-  color: #F8A667; }
-
-.mineralGreen {
-  color: #476B5D; }
+  color: #f8a667; }
 
 .green {
   color: #476a5c; }
 
 .rawSienna {
-  color: #D47042; }
+  color: #d47042; }
 
 .fireFly {
-  color: #0B242B; }
+  color: #0b242b; }
 
 .bg-black {
   background-color: #000; }
@@ -843,22 +840,19 @@
   background-color: #fff; }
 
 .bg-edward {
-  background-color: #9BABAA; }
+  background-color: #9babaa; }
 
 .bg-sandyBrown {
-  background-color: #F8A667; }
-
-.bg-mineralGreen {
-  background-color: #476B5D; }
+  background-color: #f8a667; }
 
 .bg-green {
   background-color: #476a5c; }
 
 .bg-rawSienna {
-  background-color: #D47042; }
+  background-color: #d47042; }
 
 .bg-fireFly {
-  background-color: #0B242B; }
+  background-color: #0b242b; }
 
 .bg-salmon {
   background-color: #f6a590; }
@@ -1130,11 +1124,15 @@ header {
   padding-top: 74px; }
 
 .newsletter {
+  background: rgba(162, 201, 185, 0.2);
+  color: #476a5c;
   padding-bottom: 20px;
   padding-top: 60px; }
+  .newsletter h2 {
+    border-bottom-color: #476a5c; }
 
 #mc_embed_signup form {
-  padding: 24px 0 0; }
+  padding: 12px 0 0; }
   #mc_embed_signup form .mc-field-group {
     padding-top: 12px;
     width: 100%; }
@@ -1142,14 +1140,14 @@ header {
     border-radius: 4px;
     width: 100%; }
   #mc_embed_signup form .button {
-    background-color: white;
+    background-color: #476a5c;
     border-radius: 24px;
-    color: #476a5c;
+    color: #fff;
     display: block;
-    font-family: 'KelptA1-Bold', Sans-Serif;
+    font-family: "KelptA1-Bold", Sans-Serif;
     font-size: 24px;
     height: inherit;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     padding: 14px 12px 8px 12px;
     margin: 24px auto;
     text-align: center;
@@ -1174,7 +1172,7 @@ img {
       width: 40%; } }
 
 .logo img {
-  animation: logo .9s ease;
+  animation: logo 0.9s ease;
   animation-fill-mode: forwards;
   opacity: 0;
   transform: scale(0.8) translateY(20px); }
@@ -1193,7 +1191,7 @@ a {
 
 .rsvp-and-menu {
   position: absolute;
-  color: #203e44;
+  color: #476a5c;
   z-index: 2;
   right: 0; }
 
@@ -1220,9 +1218,9 @@ a {
   border-radius: 24px;
   color: #476a5c;
   display: block;
-  font-family: 'KelptA1-Bold', Sans-Serif;
+  font-family: "KelptA1-Bold", Sans-Serif;
   font-size: 24px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   padding: 14px 12px 8px 12px;
   margin: 24px auto;
   text-align: center;
@@ -1243,6 +1241,6 @@ a {
 .instagram {
   padding: 36px 24px 20px; }
   .instagram h2 {
-    font-family: 'KelptA3-Regular';
+    font-family: "KelptA3-Regular";
     font-size: 28px;
     padding-bottom: 16px; }

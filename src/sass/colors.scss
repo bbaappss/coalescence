@@ -1,86 +1,75 @@
 $black: #000;
 $white: #fff;
 
-$edward: #9BABAA;
-$sandyBrown: #F8A667;
-$mineralGreen: #476B5D;
-$rawSienna: #D47042;
-$fireFly: #0B242B;
+$edward: #9babaa;
+$sandyBrown: #f8a667;
+$rawSienna: #d47042;
+$fireFly: #0b242b;
 $green: rgba(71, 106, 92, 1);
-$darkGreen: rgba(32, 62, 68, 1);
+$lightGreen: #739889;
 $salmon: rgba(246, 165, 144, 1);
 $brown: #42200e;
 
 .black {
-    color: $black;
+  color: $black;
 }
 
 .white {
-    color: $white;
+  color: $white;
 }
 
 .edward {
-    color: $edward;
+  color: $edward;
 }
 
 .sandyBrown {
-    color: $sandyBrown;
-}
-
-.mineralGreen {
-    color: $mineralGreen;
+  color: $sandyBrown;
 }
 
 .green {
-    color: $green;
+  color: $green;
 }
 
 .rawSienna {
-    color: $rawSienna;
+  color: $rawSienna;
 }
 
 .fireFly {
-    color: $fireFly;
+  color: $fireFly;
 }
 
-
 .bg-black {
-    background-color: $black;
+  background-color: $black;
 }
 
 .bg-white {
-    background-color: $white;
+  background-color: $white;
 }
 
 .bg-edward {
-    background-color: $edward;
+  background-color: $edward;
 }
 
 .bg-sandyBrown {
-    background-color: $sandyBrown;
-}
-
-.bg-mineralGreen {
-    background-color: $mineralGreen;
+  background-color: $sandyBrown;
 }
 
 .bg-green {
-    background-color: $green;
+  background-color: $green;
 }
 
-
 .bg-rawSienna {
-    background-color: $rawSienna;
+  background-color: $rawSienna;
 }
 
 .bg-fireFly {
-    background-color: $fireFly;
+  background-color: $fireFly;
 }
 
 .bg-salmon {
-    background-color: $salmon;
+  background-color: $salmon;
 }
 
 .icon.white {
-    fill: white;
+  fill: white;
 }
