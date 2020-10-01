@@ -972,6 +972,10 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
 html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
   padding-top: 6px; }
 
+@media (min-width: 1600px) {
+  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+    padding-top: 0px; } }
+
 .burger-and-fries-container {
   border-bottom: 2px solid transparent;
   display: flex;
