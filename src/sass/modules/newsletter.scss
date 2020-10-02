@@ -49,5 +49,8 @@
 @media (min-width: 1024px) {
   .newsletter {
     background: $white;
+    h2 {
+      font-size: 56px;
+    }
   }
 }

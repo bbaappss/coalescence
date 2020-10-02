@@ -955,7 +955,7 @@ h4.light {
     .sections-layout-1 > * {
       width: 50vw; }
       .sections-layout-1 > *:first-child {
-        border-right: 1px solid rgba(162, 201, 185, 0.2); } }
+        border-right: 1px dashed rgba(71, 106, 92, 0.3); } }
 
 .about {
   padding-top: 64px; }
@@ -1273,7 +1273,9 @@ header {
 
 @media (min-width: 1024px) {
   .newsletter {
-    background: #fff; } }
+    background: #fff; }
+    .newsletter h2 {
+      font-size: 56px; } }
 
 .section.rsvp {
   background: rgba(162, 201, 185, 0.2);
