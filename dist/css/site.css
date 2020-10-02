@@ -948,6 +948,15 @@ h4.light {
   .section {
     padding: 74px 80px; } }
 
+@media (min-width: 1024px) {
+  .sections-layout-1 {
+    display: flex;
+    align-items: center; }
+    .sections-layout-1 > * {
+      width: 50vw; }
+      .sections-layout-1 > *:first-child {
+        border-right: 1px solid rgba(162, 201, 185, 0.2); } }
+
 .about {
   padding-top: 64px; }
 
@@ -1262,6 +1271,10 @@ header {
   text-align: inherit;
   font-size: 14px; }
 
+@media (min-width: 1024px) {
+  .newsletter {
+    background: #fff; } }
+
 .section.rsvp {
   background: rgba(162, 201, 185, 0.2);
   color: #476a5c; }
@@ -1272,6 +1285,11 @@ header {
     padding-bottom: 0; }
   .section.rsvp p {
     margin-top: 0; }
+
+@media (min-width: 1024px) {
+  .section.rsvp .inner {
+    margin: 0 auto;
+    width: 50vw; } }
 
 body {
   overflow-x: hidden; }
@@ -1328,6 +1346,13 @@ a {
   .sponsor-logo-grid img {
     max-height: 30vw;
     margin-top: 7vw; }
+
+@media (min-width: 1024px) {
+  .sponsors h3 {
+    display: block;
+    text-align: center; }
+  .sponsors .sponsor-logo-grid {
+    grid-template-columns: 1fr 1fr; } }
 
 .footer-image {
   padding: 60px 0;

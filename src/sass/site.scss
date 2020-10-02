@@ -81,6 +81,19 @@ a {
   }
 }
 
+@media (min-width: 1024px) {
+  .sponsors {
+    h3 {
+      display: block;
+      text-align: center;
+    }
+
+    .sponsor-logo-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
 .footer-image {
   padding: 60px 0;
   z-index: 0;

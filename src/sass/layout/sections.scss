@@ -101,6 +101,19 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .sections-layout-1 {
+    display: flex;
+    align-items: center;
+    > * {
+      width: 50vw;
+      &:first-child {
+        border-right: 1px solid $fadedGreen;
+      }
+    }
+  }
+}
+
 .about {
   padding-top: 64px;
 }

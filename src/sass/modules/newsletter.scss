@@ -45,3 +45,9 @@
   text-align: inherit;
   font-size: 14px;
 }
+
+@media (min-width: 1024px) {
+  .newsletter {
+    background: $white;
+  }
+}
