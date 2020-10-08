@@ -125,6 +125,7 @@ header {
     transform: translate(4vw, 6px);
   }
 
+  html .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"])
     .not-home
     .burger-and-fries-container

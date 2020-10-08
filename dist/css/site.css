@@ -978,10 +978,6 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
     width: 120px;
     transform: translate(4vw, 10px); }
 
-@media (min-width: 1280px) {
-  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
-    padding-top: 6px; } }
-
 @media (min-width: 1600px) {
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     padding-top: 0px; } }
@@ -1001,6 +997,7 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
   .burger-and-fries-container .hamburger-inner::after {
     height: 3px; }
   .burger-and-fries-container .logo-in-navigation {
+    background-color: transparent;
     left: 0;
     top: 0;
     position: absolute;
@@ -1174,6 +1171,7 @@ header {
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     width: 200px;
     transform: translate(4vw, 6px); }
+  html .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"])
 .not-home
 .burger-and-fries-container

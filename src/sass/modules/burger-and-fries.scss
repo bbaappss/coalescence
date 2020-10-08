@@ -11,12 +11,6 @@ html:not([data-scroll="0"]) {
   }
 }
 
-@media (min-width: 1280px) {
-  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
-    padding-top: 6px;
-  }
-}
-
 @media (min-width: 1600px) {
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     padding-top: 0px;
@@ -41,6 +35,7 @@ html:not([data-scroll="0"]) {
   }
 
   .logo-in-navigation {
+    background-color: transparent;
     left: 0;
     top: 0;
     position: absolute;
