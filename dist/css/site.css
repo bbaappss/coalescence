@@ -1291,8 +1291,12 @@ header {
   background-attachment: fixed;
   background-size: 160px;
   padding: 64px 24px; }
-  .picture-frame > * + * {
-    display: none; }
+  .picture-frame > * {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 5px #476a5c; }
+    .picture-frame > * + * {
+      border-radius: 100px 40px 25px 15px/15px 100px 225px 105px;
+      display: none; }
 
 @media (min-width: 768px) {
   .picture-frame {
@@ -1306,6 +1310,7 @@ header {
     align-items: center;
     justify-content: center; }
     .picture-frame > * {
+      border: solid 15px #476a5c;
       height: 300px !important;
       margin-top: 32px; }
       .picture-frame > * + * {

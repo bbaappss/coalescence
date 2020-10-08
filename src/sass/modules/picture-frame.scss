@@ -5,7 +5,11 @@
 
   padding: 64px 24px;
   > * {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 5px $green;
+
     + * {
+      border-radius: 100px 40px 25px 15px/15px 100px 225px 105px;
       display: none;
     }
   }
@@ -25,6 +29,7 @@
     align-items: center;
     justify-content: center;
     > * {
+      border: solid 15px $green;
       height: 300px !important;
       margin-top: 32px;
       + * {
