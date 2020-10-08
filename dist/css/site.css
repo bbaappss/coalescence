@@ -1286,6 +1286,32 @@ header {
     .newsletter h2 {
       font-size: 56px; } }
 
+.picture-frame {
+  background-image: url(../../images/patterns/Group2.png);
+  background-attachment: fixed;
+  background-size: 160px;
+  padding: 64px 24px; }
+  .picture-frame > * + * {
+    display: none; }
+
+@media (min-width: 768px) {
+  .picture-frame {
+    background-size: 160px;
+    padding: 64px 100px; } }
+
+@media (min-width: 1280px) {
+  .picture-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .picture-frame > * {
+      height: 300px !important;
+      margin-top: 32px; }
+      .picture-frame > * + * {
+        margin-top: 64px;
+        display: block; } }
+
 .section.rsvp {
   background: rgba(162, 201, 185, 0.2);
   color: #476a5c; }
