@@ -978,8 +978,9 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
     width: 120px;
     transform: translate(4vw, 10px); }
 
-html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
-  padding-top: 6px; }
+@media (min-width: 1280px) {
+  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+    padding-top: 6px; } }
 
 @media (min-width: 1600px) {
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
@@ -1035,14 +1036,17 @@ html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
 body.modal-open {
   overflow-y: hidden; }
 
+html:not([data-scroll="0"]) .not-home body.menu-open,
 html:not([data-scroll="0"]) body.menu-open,
 body.menu-open {
   overflow-y: hidden; }
-  html:not([data-scroll="0"]) body.menu-open .logo-in-navigation,
-  body.menu-open .logo-in-navigation {
+  html:not([data-scroll="0"]) .not-home body.menu-open .burger-and-fries-container .logo-in-navigation,
+  html:not([data-scroll="0"]) body.menu-open .burger-and-fries-container .logo-in-navigation,
+  body.menu-open .burger-and-fries-container .logo-in-navigation {
     left: 50%;
     transform: translate(-50%, 12vh);
     width: 240px; }
+  html:not([data-scroll="0"]) .not-home body.menu-open .burger-and-fries-container,
   html:not([data-scroll="0"]) body.menu-open .burger-and-fries-container,
   body.menu-open .burger-and-fries-container {
     border-bottom: 2px solid transparent; }
@@ -1170,8 +1174,13 @@ header {
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     width: 200px;
     transform: translate(4vw, 6px); }
-  .not-home .burger-and-fries-container .logo-in-navigation {
-    padding-top: 6px; }
+  html:not([data-scroll="0"])
+.not-home
+.burger-and-fries-container
+.logo-in-navigation {
+    width: 200px;
+    transform: translate(4vw, 6px);
+    padding: 6px 0 0; }
   .burger-and-fries-container {
     height: 96px; }
     .burger-and-fries-container .burger-and-fries {

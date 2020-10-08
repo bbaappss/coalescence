@@ -11,8 +11,10 @@ html:not([data-scroll="0"]) {
   }
 }
 
-html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
-  padding-top: 6px;
+@media (min-width: 1280px) {
+  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+    padding-top: 6px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -92,10 +94,11 @@ body.modal-open {
   overflow-y: hidden;
 }
 
+html:not([data-scroll="0"]) .not-home body.menu-open,
 html:not([data-scroll="0"]) body.menu-open,
 body.menu-open {
   overflow-y: hidden;
-  .logo-in-navigation {
+  .burger-and-fries-container .logo-in-navigation {
     left: 50%;
     transform: translate(-50%, 12vh);
     width: 240px;

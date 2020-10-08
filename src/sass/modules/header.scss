@@ -125,8 +125,13 @@ header {
     transform: translate(4vw, 6px);
   }
 
-  .not-home .burger-and-fries-container .logo-in-navigation {
-    padding-top: 6px;
+  html:not([data-scroll="0"])
+    .not-home
+    .burger-and-fries-container
+    .logo-in-navigation {
+    width: 200px;
+    transform: translate(4vw, 6px);
+    padding: 6px 0 0;
   }
 
   .burger-and-fries-container {
