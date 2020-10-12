@@ -1362,6 +1362,18 @@ header {
 .image-border-2 {
   border-radius: 100px 40px 25px 15px/15px 100px 225px 105px; }
 
+@media (min-width: 1280px) {
+  .homepage-picture-frame > * {
+    min-height: 28vw !important;
+    max-height: 28vw !important;
+    margin-top: 32px;
+    max-width: 28vw; }
+  .homepage-picture-frame img:first-child {
+    margin-left: -200px; }
+  .homepage-picture-frame img:last-child {
+    margin-top: -4vw;
+    margin-right: -240px; } }
+
 .section.rsvp {
   background: rgba(162, 201, 185, 0.2);
   color: #476a5c; }
