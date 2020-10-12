@@ -1,0 +1,85 @@
+extends ../template.pug
+
+
+block content
+  - var page = "faq"
+  div(
+    class="fixed flex items-center" 
+    id="loading"
+    style="z-index: 50000;"
+  )
+    img(
+      class="m-auto inline-block max-w-xs" 
+      src="/images/coalescence-logo.svg"
+    )
+  .fries.menu-hide.custom-type.animate-smooth.animate-dur-md
+    .flex.flex-col.justify-center.items-center.h-full
+      include ../modules/menu.pug
+  .coalesce-body.not-home
+    #navigation.burger-and-fries-container
+      a(href="/" class="logo-in-navigation")
+        img(
+          class="logo-in-navigation-img" 
+          src="/images/coalescence-logo.svg"
+        )
+      .burger-and-fries
+        <button class="hamburger hamburger--collapse js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> 
+      .menu-on-large
+        include ../modules/menu.pug
+  .section.activities.main-section.not-home
+    .inner
+      h1 Frequently Asked Questions
+      p You have questions and we have answers. 
+        <br/> Feel free to contact us if you have additional questions or concerns.
+      hr 
+      h2 Is this safe?
+      p Yes it is.      
+      hr 
+      h2 What is Coalescence?
+      p Yes it is.      
+      hr 
+      h2 When and where is Coalescence?
+      p Yes it is.      
+      hr 
+      h2 How can I purchase tickets?
+      p Yes it is.      
+      hr 
+      h2 Is there a single day option?
+      p Yes it is.      
+      hr 
+      h2 Are food and drinks included?
+      p Yes it is.      
+      hr 
+      h2 What kind of activities are there? 
+      p Yes it is.      
+      hr 
+      h2 How do we sign up for the outdoor activities?
+      p Yes it is.      
+      hr 
+      h2 Do we have to bring anything for the outdoor activities?
+      p Yes it is.      
+      hr 
+      h2 What happens if I don't want to participate in any outdoor activities?
+      p Yes it is.      
+      hr 
+      h2 Can we bring our children?
+      p Yes it is.      
+  .section.rsvp
+    h2 Join us June 11-13, 2021. 
+    p Reserve your spot today and be one of the few founding Coalescees.
+    a.cta(target="_blank", href="http://www.eventbrite.com") RSVP
+      span → 
+  .sections-layout-1
+    include ../modules/sponsors.pug
+    .section.newsletter
+      include ../modules/newsletter.pug
+
+  img(
+      class="footer-image"
+      src="/images/footer/footer2.png"
+  )
+  p.footer-note Coalescence 2020 ©
