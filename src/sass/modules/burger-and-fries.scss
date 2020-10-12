@@ -2,7 +2,7 @@
 html:not([data-scroll="0"]) {
   .burger-and-fries-container {
     background: rgba(255, 255, 255, 0.95);
-    border-bottom: 2px solid rgba(71, 106, 92, 0.95);
+    border-bottom: 1px solid $slightFadedGreen;
 
     .logo-in-navigation {
       width: 120px;

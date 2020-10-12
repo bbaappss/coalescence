@@ -62,11 +62,11 @@ block content
   .radical-cooperation-2
     .picture-frame.picture-frame-1
       img(
-          class="trees"
+          class="image-border image-border-1"
           src="/images/hiking-with-ranger-2to1.jpg"
       )
       img(
-        class="trees"
+        class="image-border image-border-2 show-on-large"
         src="/images/campfire.JPG"
       )
     .section
@@ -81,33 +81,7 @@ block content
       a.cta(target="_blank", href="http://www.eventbrite.com") RSVP
         span → 
   .sections-layout-1
-    .section.sponsors.light
-      h3 Sponsored by
-      .sponsor-logo-grid
-        img(
-            class="sponsor"
-            src="/images/sponsors/TTBC-Registered+Logo-BLK_green.png"
-        )
-        img(
-            class="sponsor"
-            src="/images/sponsors/DT_Logo_SBUpdate_green.png"
-        )
-        img(
-            class="sponsor"
-            src="/images/sponsors/1280px-Trek_Bicycle_Corporation_logo.svg_green.png"
-        )
-        img(
-            class="sponsor"
-            src="/images/sponsors/GoPro-Logo_green.png"
-        )
-        img(
-            class="sponsor"
-            src="/images/sponsors/Logo_of_CamelBak_Products_LLC_green.png"
-        )
-        img(
-            class="sponsor"
-            src="/images/sponsors/clifbar-logo.0f7b43f.svg"
-        )
+    include ../modules/sponsors.pug
     .section.newsletter
       include ../modules/newsletter.pug
   img(

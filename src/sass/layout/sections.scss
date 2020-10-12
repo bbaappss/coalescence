@@ -114,8 +114,21 @@
   }
 }
 
-.about {
+.not-home.main-section {
   padding-top: 64px;
+  background: white;
+  color: $green;
+  .inner {
+    padding-top: 16px;
+  }
+  @media (min-width: 1280px) {
+    h1 {
+      font-size: 64px;
+    }
+    .inner {
+      padding-top: 64px;
+    }
+  }
 }
 
 @media (min-width: 1280px) {

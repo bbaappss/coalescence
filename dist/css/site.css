@@ -957,8 +957,17 @@ h4.light {
       .sections-layout-1 > *:first-child {
         border-right: 1px dashed rgba(71, 106, 92, 0.3); } }
 
-.about {
-  padding-top: 64px; }
+.not-home.main-section {
+  padding-top: 64px;
+  background: white;
+  color: #476a5c; }
+  .not-home.main-section .inner {
+    padding-top: 16px; }
+  @media (min-width: 1280px) {
+    .not-home.main-section h1 {
+      font-size: 64px; }
+    .not-home.main-section .inner {
+      padding-top: 64px; } }
 
 @media (min-width: 1280px) {
   .about {
@@ -972,7 +981,7 @@ h4.light {
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 2px solid rgba(71, 106, 92, 0.95); }
+  border-bottom: 1px solid rgba(71, 106, 92, 0.3); }
   .not-home .burger-and-fries-container .logo-in-navigation,
   html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
     width: 120px;
@@ -1292,12 +1301,6 @@ header {
   background-attachment: fixed;
   background-size: 160px;
   padding: 64px 24px; }
-  .picture-frame > * {
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    border: solid 5px #476a5c; }
-    .picture-frame > * + * {
-      border-radius: 100px 40px 25px 15px/15px 100px 225px 105px;
-      display: none; }
 
 @media (min-width: 768px) {
   .picture-frame {
@@ -1311,12 +1314,23 @@ header {
     align-items: center;
     justify-content: center; }
     .picture-frame > * {
-      border: solid 15px #476a5c;
       min-height: 300px !important;
       margin-top: 32px; }
       .picture-frame > * + * {
         margin-top: 64px;
         display: block; } }
+
+.image-border {
+  border: solid 5px #476a5c; }
+  @media (min-width: 1280px) {
+    .image-border {
+      border: solid 15px #476a5c; } }
+
+.image-border-1 {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; }
+
+.image-border-2 {
+  border-radius: 100px 40px 25px 15px/15px 100px 225px 105px; }
 
 .section.rsvp {
   background: rgba(162, 201, 185, 0.2);
@@ -1495,3 +1509,10 @@ a {
       .radical-cooperation-3 .section h2 {
         color: #476a5c;
         border-bottom: 3px solid #476a5c; } }
+
+.show-on-large {
+  display: none; }
+
+@media (min-width: 1280px) {
+  .show-on-large {
+    display: block; } }

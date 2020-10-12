@@ -216,3 +216,13 @@ a {
     }
   }
 }
+
+.show-on-large {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .show-on-large {
+    display: block;
+  }
+}

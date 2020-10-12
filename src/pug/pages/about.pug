@@ -30,47 +30,38 @@ block content
         </button> 
       .menu-on-large
         include ../modules/menu.pug
-  .section.about.not-home
+  .section.about.main-section.not-home
     .inner
-      h2 About Coalescence
+      h1 About Coalescence
       p We've created an outdoor experience like any other. Coalescence is a "choose your own adventure" style campout that's focused on disconnecting from technology and our daily lives so we can reconnect with ourselves, each other and nature. 
+      .picture-frame.picture-frame-1
+        img(
+            class="trees"
+            src="/images/hiking-with-ranger-2to1.jpg"
+        )
       p This camp out is for the curious beginner and the experienced outdoors person. Everyone has a chance to participate as much or as little as they want in activities put on by our teachers, sponsors, partners and Coalescees. See a list of activities here. Enjoy music and the arts as we intertwine the two to create a more intimate experience.
+      .picture-frame.picture-frame-1
+        img(
+            class="trees"
+            src="/images/hiking-with-ranger-2to1.jpg"
+        )
       p We believe in radical contribution and ask that ever Coalescee contribute in some shape or form because that enhances everyone's experience. We've had people sign up to lead activities, volunteer their talents, pick up trash and throw camp parties. What can you and your camp bestow upon us? 
+      .picture-frame.picture-frame-1
+        img(
+            class="trees"
+            src="/images/hiking-with-ranger-2to1.jpg"
+        )
       p We promote conservation principles like "reduce, reuse and then recycle"--in that order--and ask that you "leave no trace". Practicing these concepts helps ensure that nature and our environment are preserved for future use and appreciation.
   .section.rsvp
     h2 Join us June 11-13, 2021. 
     p Reserve your spot today and be one of the few founding Coalescees.
     a.cta(target="_blank", href="http://www.eventbrite.com") RSVP
       span → 
-  .section.sponsors.light
-    h3 Sponsored by
-    .sponsor-logo-grid
-      img(
-          class="sponsor"
-          src="/images/sponsors/TTBC-Registered+Logo-BLK_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/DT_Logo_SBUpdate_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/1280px-Trek_Bicycle_Corporation_logo.svg_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/GoPro-Logo_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/Logo_of_CamelBak_Products_LLC_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/clifbar-logo.0f7b43f.svg"
-      )
-  .section.newsletter
-    include ../modules/newsletter.pug
+  .sections-layout-1
+    include ../modules/sponsors.pug
+    .section.newsletter
+      include ../modules/newsletter.pug
+
   img(
       class="footer-image"
       src="/images/footer/footer2.png"
