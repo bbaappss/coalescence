@@ -1000,6 +1000,8 @@ h4.light {
       padding-top: 64px; } }
 
 @media (min-width: 1280px) {
+  .section.activities {
+    padding-bottom: 0; }
   .about {
     padding-top: 120px; }
     .about h2 {
