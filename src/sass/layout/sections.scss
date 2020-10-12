@@ -115,9 +115,16 @@
 }
 
 .section-layout-2 {
+  &:not(:first-of-type) {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid $green;
+  }
+
   @media (min-width: 1280px) {
     &:not(:first-of-type) {
-      border-top: 1px solid $green;
+      margin-top: 0;
+      padding-top: 0;
     }
     &:nth-child(odd) .layout-2-content {
       flex-direction: row-reverse;
