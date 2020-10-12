@@ -1188,6 +1188,9 @@ header {
       height: 100%;
       align-items: center;
       margin-right: 24px; }
+      .burger-and-fries-container .menu-on-large a:first-child {
+        order: 1;
+        margin-left: 24px; }
     .burger-and-fries-container a {
       background-color: #f1773d;
       color: #fff;

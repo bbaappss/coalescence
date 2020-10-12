@@ -10,13 +10,9 @@ block content
       class="m-auto inline-block max-w-xs" 
       src="/images/coalescence-logo.svg"
     )
-  .fries.menu-hide.custom-type.animate-smooth.animate-dur-md
+  .fries.menu-hide
     .flex.flex-col.justify-center.items-center.h-full
-      a(href="https://eventbrite.com/" target="_blank") RSVP
-      a(href="about.html") About
-      a(href="#") Activities
-      a(href="#") FAQ
-      a(href="#") Contact
+      include ../modules/menu.pug
   .coalesce-body
     #navigation.burger-and-fries-container
       a(href="/" class="logo-in-navigation")
@@ -31,11 +27,7 @@ block content
           </span>
         </button> 
       .menu-on-large
-        a(href="about.html") About
-        a(href="#") Activities
-        a(href="#") FAQ
-        a(href="#") Contact
-        a(href="https://eventbrite.com/" target="_blank") RSVP
+        include ../modules/menu.pug
     header.parallax-header.relative
       .sliding-background
         .sliding-background-inner

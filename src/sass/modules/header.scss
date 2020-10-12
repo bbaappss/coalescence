@@ -147,6 +147,10 @@ header {
       height: 100%;
       align-items: center;
       margin-right: 24px;
+      a:first-child {
+        order: 1;
+        margin-left: 24px;
+      }
     }
 
     a {
