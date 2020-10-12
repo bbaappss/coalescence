@@ -1555,7 +1555,7 @@ a {
         border-bottom: 3px solid #476a5c; } }
 
 .show-on-large {
-  display: none; }
+  display: none !important; }
 
 @media (min-width: 1280px) {
   .hide-on-large {
