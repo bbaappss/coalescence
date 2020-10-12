@@ -1,6 +1,8 @@
 extends ../template.pug
 
+
 block content
+  - var page = "about"
   div(
     class="fixed flex items-center" 
     id="loading"
@@ -12,11 +14,7 @@ block content
     )
   .fries.menu-hide.custom-type.animate-smooth.animate-dur-md
     .flex.flex-col.justify-center.items-center.h-full
-      a(href="https://eventbrite.com/" target="_blank") RSVP
-      a(href="about.html" class="active") About
-      a(href="#") Activities
-      a(href="#") FAQ
-      a(href="#") Contact
+      include ../modules/menu.pug
   .coalesce-body.not-home
     #navigation.burger-and-fries-container
       a(href="/" class="logo-in-navigation")
@@ -31,11 +29,7 @@ block content
           </span>
         </button> 
       .menu-on-large
-        a(href="about.html" class="active") About
-        a(href="#") Activities
-        a(href="#") FAQ
-        a(href="#") Contact
-        a(href="https://eventbrite.com/" target="_blank") RSVP
+        include ../modules/menu.pug
   .section.about.not-home
     .inner
       h2 About Coalescence

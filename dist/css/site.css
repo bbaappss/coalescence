@@ -1312,7 +1312,7 @@ header {
     justify-content: center; }
     .picture-frame > * {
       border: solid 15px #476a5c;
-      height: 300px !important;
+      min-height: 300px !important;
       margin-top: 32px; }
       .picture-frame > * + * {
         margin-top: 64px;
