@@ -1380,7 +1380,11 @@ header {
     margin-left: -200px; }
   .homepage-picture-frame img:last-child {
     margin-top: -4vw;
-    margin-right: -240px; } }
+    margin-right: -240px; }
+  .radical-cooperation-2 + .radical-cooperation-2 .homepage-picture-frame img:first-child {
+    margin-left: 200px; }
+  .radical-cooperation-2 + .radical-cooperation-2 .homepage-picture-frame img:last-child {
+    margin-right: 240px; } }
 
 .section.rsvp {
   background: rgba(162, 201, 185, 0.2);
@@ -1520,6 +1524,14 @@ a {
       bottom: 0;
       right: 0; } }
 
+.radical-cooperation-2 .section {
+  background: white;
+  color: #476a5c; }
+
+.radical-cooperation-2 h2 {
+  color: #476a5c;
+  border-bottom: 3px solid #476a5c; }
+
 @media (min-width: 1280px) {
   .radical-cooperation-2 {
     display: flex; }
@@ -1530,15 +1542,13 @@ a {
       width: 100%;
       height: 100%; }
     .radical-cooperation-2 .section {
-      align-self: center;
-      background: white;
-      color: #476a5c; }
+      align-self: center; }
       .radical-cooperation-2 .section h2 {
         display: inline-block;
         text-align: left;
-        margin: 24px auto;
-        color: #476a5c;
-        border-bottom: 3px solid #476a5c; } }
+        margin: 24px auto; }
+    .radical-cooperation-2 + .radical-cooperation-2 {
+      flex-direction: row-reverse; } }
 
 @media (min-width: 1280px) {
   .radical-cooperation-3 {

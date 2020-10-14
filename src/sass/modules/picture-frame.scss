@@ -58,9 +58,19 @@
     img:first-child {
       margin-left: -200px;
     }
+
     img:last-child {
       margin-top: -4vw;
       margin-right: -240px;
+    }
+  }
+  .radical-cooperation-2 + .radical-cooperation-2 .homepage-picture-frame {
+    img:first-child {
+      margin-left: 200px;
+    }
+
+    img:last-child {
+      margin-right: 240px;
     }
   }
 }
