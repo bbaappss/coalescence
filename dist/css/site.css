@@ -1138,6 +1138,27 @@ body.menu-open {
   transition-duration: 0.15s;
   transition-timing-function: ease; }
 
+footer {
+  background: #182f35;
+  position: relative; }
+  footer img {
+    padding-top: 24px;
+    z-index: 0; }
+    @media (min-width: 768px) {
+      footer img {
+        padding-top: 64px; } }
+  footer .footer-note {
+    position: absolute;
+    background: rgba(24, 47, 53, 0.8);
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    padding: 18px 0;
+    width: 100%;
+    z-index: 1; }
+
 @media screen and (max-width: 576px) {
   header.parallax-header {
     height: 350px !important; } }
@@ -1464,16 +1485,6 @@ a {
     text-align: center; }
   .sponsors .sponsor-logo-grid {
     grid-template-columns: 1fr 1fr; } }
-
-.footer-image {
-  padding: 60px 0;
-  z-index: 0; }
-
-.footer-note {
-  display: block;
-  margin: 24px auto;
-  text-align: center;
-  width: 100%; }
 
 .instagram {
   padding: 36px 24px 20px; }
