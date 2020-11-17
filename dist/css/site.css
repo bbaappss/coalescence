@@ -1366,7 +1366,7 @@ header {
     background-size: 160px;
     padding: 64px 100px; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .picture-frame {
     display: flex;
     flex-direction: column;
@@ -1391,7 +1391,7 @@ header {
 .image-border-2 {
   border-radius: 100px 40px 25px 15px/15px 100px 225px 105px; }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .homepage-picture-frame > * {
     min-height: 28vw !important;
     max-height: 28vw !important;
@@ -1543,7 +1543,7 @@ a {
   color: #476a5c;
   border-bottom: 3px solid #476a5c; }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .radical-cooperation-2 {
     display: flex; }
     .radical-cooperation-2 > * {

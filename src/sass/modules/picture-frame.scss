@@ -13,7 +13,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .picture-frame {
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@
   border-radius: 100px 40px 25px 15px/15px 100px 225px 105px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .homepage-picture-frame {
     > * {
       min-height: 28vw !important;
