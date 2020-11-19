@@ -1,0 +1,20 @@
+.section.rsvp {
+  background: $fadedGreen;
+  color: $green;
+  h2 {
+    color: $green;
+    text-align: left;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section.rsvp .inner {
+    margin: 0 auto;
+    width: 50vw;
+  }
+}

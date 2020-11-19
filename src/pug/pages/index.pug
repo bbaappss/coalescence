@@ -2,7 +2,7 @@ extends ../template.pug
 
 block content
   div(
-    class="fixed flex items-center bg-salmon" 
+    class="fixed flex items-center" 
     id="loading"
     style="z-index: 50000;"
   )
@@ -10,28 +10,24 @@ block content
       class="m-auto inline-block max-w-xs" 
       src="/images/coalescence-logo.svg"
     )
-  .
-    <div class="fries menu-hide custom-type grind-dark-bg animate-smooth animate-dur-md">
-      <div class="flex flex-col justify-center items-center h-full">
-        <a class="" href="https://grinduro.com/">RSVP</a>
-        <a class="" href="about.html">About</a>
-        <a class="" href="news.html">Activities</a>
-        <a class="" href="news.html">FAQs</a>
-        <a class="" href="contact.html">Contact</a>
-      </div>
-    </div>
+  .fries.menu-hide
+    .flex.flex-col.justify-center.items-center.h-full
+      include ../modules/menu.pug
   .coalesce-body
     #navigation.burger-and-fries-container
-      img(
-        class="logo-in-navigation" 
-        src="/images/coalescence-logo.svg"
-      )
+      a(href="/" class="logo-in-navigation")
+        img(
+          class="logo-in-navigation-img" 
+          src="/images/coalescence-logo.svg"
+        )
       .burger-and-fries
         <button class="hamburger hamburger--collapse js-hamburger" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button> 
+      .menu-on-large
+        include ../modules/menu.pug
     header.parallax-header.relative
       .sliding-background
         .sliding-background-inner
@@ -58,52 +54,53 @@ block content
       )
       .circle-bg
   .section.minifesto
-    h2 DISCONNECT TO RECONNECT
-    p Coalescence is a choose-your-own-adventure style campout focused on celebrating nature through outdoor activities and fellowship. 
-    p Try something new or show off your skills by hiking, climbing, kayaking, mountain biking, swimming, or practicing yoga. Over our three days together in the mountains, we can begin to reconnect with ourselves, each other, and with nature.
-  img(
-    src="/images/campfire.JPG"
-  )
-  .section
-    h2 Radical Cooperation
-    p Like anything in life, Coalescence is what you make it. 
-    p We ask that every Coalescee contribute in some way — whether you’re leading an activity, picking up trash, helping coordinate a meal, organizing a gear exchange, or throwing a camp party, the magic of Coalescence doesn’t happen without you! 
-    p As you prepare for the weekend, brainstorm how you can make the experience more special not only for yourself but for those you’ll be sharing it with.
-  .section
-    h2 Join us June 11-13, 2021. 
-    p RSVP today and be one of the few founding Coalescees.
-    a.rsvp-big(target="_blank", href="http://www.eventbrite.com") RSVP
-  .section.sponsors.light
-    h3 Sponsored by
-    .sponsor-logo-grid
+    .background
+    .inner
+      h2 DISCONNECT TO RECONNECT
+      p Coalescence is a choose-your-own-adventure style campout focused on celebrating nature through outdoor activities and fellowship. 
+      p Try something new or show off your skills by hiking, climbing, kayaking, mountain biking, swimming, or practicing yoga. 
+      p Over our three days together in the mountains, we can begin to reconnect with ourselves, each other, and with nature. 
+  .radical-cooperation-2
+    .picture-frame.picture-frame-1.homepage-picture-frame
       img(
-          class="sponsor"
-          src="/images/sponsors/TTBC-Registered+Logo-BLK_green.png"
+          class="image-border image-border-1"
+          src="/images/couple-hiking-mountain-climbing-1296x728-header.jpg"
       )
       img(
-          class="sponsor"
-          src="/images/sponsors/DT_Logo_SBUpdate_green.png"
+        class="image-border image-border-2 show-on-medium"
+        src="/images/campfire.JPG"
+      )
+    .section
+      h2 ART AND MUSIC
+      p Join us as we decorate space and time through the intertwining of art, music and dance. 
+      p Leave your mark on the collaborative mural, then moonwalk over to the pavilion to boogie down with our live bands and DJs. 
+      p Stop by the swap meet and browse the wares of your fellow Coalescees on your way to the bonfire, where you can share your newest song or your passion for poetry at the drum circle talent show. 
+      p Before you settle into your tent, cheer for the fire dancers lighting up the night. Whether you enjoy creating art, appreciating it, or both, there is a place for you here under the stars.
+  .radical-cooperation-2
+    .picture-frame.picture-frame-1.homepage-picture-frame
+      img(
+          class="image-border image-border-1"
+          src="/images/hiking-with-ranger-2to1.jpg"
       )
       img(
-          class="sponsor"
-          src="/images/sponsors/1280px-Trek_Bicycle_Corporation_logo.svg_green.png"
+        class="image-border image-border-2 show-on-medium"
+        src="/images/campfire.JPG"
       )
-      img(
-          class="sponsor"
-          src="/images/sponsors/GoPro-Logo_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/Logo_of_CamelBak_Products_LLC_green.png"
-      )
-      img(
-          class="sponsor"
-          src="/images/sponsors/clifbar-logo.0f7b43f.svg"
-      )
-  .section.bg-mineralGreen.newsletter
-    include ../modules/newsletter.pug
-  img(
-      class="footer-image"
-      src="/images/footer/footer2.png"
-  )
-  p.footer-note Coalescence 2020 ©
+    .section
+      h2 Radical Cooperation
+      p Like anything in life, Coalescence is what you make it. 
+      p We ask that every Coalescee contribute in some way – whether you’re leading an activity, picking up trash, helping coordinate a meal, organizing a gear exchange, or throwing a camp party, the true magic of Coalescence doesn’t happen without you! 
+      p As you prepare for the weekend, brainstorm how you can make the experience more special not only for yourself but for those you’ll be sharing it with.
+      p Together, we coalesce.
+  .section.rsvp
+    .inner
+      h2 Join us June 11-13, 2021. 
+      p Reserve your spot today and be one of the few founding Coalescees.
+      a.cta(target="_blank", href="http://www.eventbrite.com") RSVP
+        span → 
+  .sections-layout-1
+    include ../modules/sponsors.pug
+    .section.newsletter
+      include ../modules/newsletter.pug
+  include ../modules/footer.pug
+  

@@ -1,144 +1,155 @@
-html:not([data-scroll='0']) {
-    .burger-and-fries-container {
-        background: rgba(255, 255, 255, .95);
-        border-bottom: 2px solid rgba(71, 106, 92, .95);
-
-        .logo-in-navigation {
-            width: 120px;
-            transform: translate(4vw, 10px);
-        }
-    }
-}
-
-
-
-.burger-and-fries-container {
-    border-bottom: 2px solid transparent;
-    display: flex;
-    justify-content: flex-end;
-    height: 60px;
-    padding: 12px;
-    position: fixed;
-    transition: 0.6s ease-in;
-    width: 100%;
-    z-index: 200;
-
-    .hamburger-inner, 
-    .hamburger-inner::before, 
-    .hamburger-inner::after {
-        height: 3px;
-    }
+.not-home,
+html:not([data-scroll="0"]) {
+  .burger-and-fries-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid $slightFadedGreen;
 
     .logo-in-navigation {
-        left: 0;
-        top: 0;
-        position: absolute;
-        transform: translate(4vw, 20vw);
-        transition: .3s ease-in;
-        width: 200px;
+      width: 120px;
+      transform: translate(4vw, 10px);
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation {
+    padding-top: 0px;
+  }
+}
+
+.burger-and-fries-container {
+  border-bottom: 2px solid transparent;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 12px;
+  position: fixed;
+  transition: 0.6s ease-in;
+  width: 100%;
+  z-index: 200;
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    height: 3px;
+  }
+
+  .logo-in-navigation {
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transform: translate(4vw, 12vw);
+    transition: 0.3s ease-in;
+    width: 200px;
+  }
+
+  .burger-and-fries {
+    display: flex;
+    align-items: center;
+  }
+
+  .rsvp {
+    border: 1px solid black;
+    color: black;
+    padding: 4px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+
+    span {
+      display: block;
+      padding-top: 6px;
+    }
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 28px;
+    line-height: 0;
+    margin-left: 12px;
+    z-index: 101;
+
+    span:nth-child(2) {
+      transform: translateX(100vw);
     }
 
-    .burger-and-fries {
-        display: flex;
-        align-items: center;
+    &.active {
+      span:nth-child(1) {
+        transform: translateX(100vw);
+      }
+      span:nth-child(2) {
+        transform: translateX(0);
+      }
     }
-
-    .rsvp {
-        border: 1px solid black;
-        color: black;
-        padding: 4px 20px;
-        border-radius: 4px;
-        text-decoration: none;
-
-        span {
-            display: block;
-            padding-top: 6px;
-        }
-    }
-
-    .burger {
-        display: block;
-        position: relative;
-        width: 28px;
-        line-height: 0;
-        margin-left: 12px;
-        z-index: 101;
-
-        span:nth-child(2) {
-            transform: translateX(100vw);
-        }
-
-        &.active {
-            span:nth-child(1) {
-                transform: translateX(100vw);
-            }
-            span:nth-child(2) {
-                transform: translateX(0);
-            }
-        }
-    }
+  }
 }
 
 body.modal-open {
-    overflow-y:hidden;
+  overflow-y: hidden;
 }
 
-html:not([data-scroll='0']) body.menu-open,
+html:not([data-scroll="0"]) .not-home body.menu-open,
+html:not([data-scroll="0"]) body.menu-open,
 body.menu-open {
-    overflow-y:hidden;
-    .logo-in-navigation {
-        left: 50%;
-        transform: translate(-50%, 120px);
-        width: 240px;
-    }
+  overflow-y: hidden;
+  .burger-and-fries-container .logo-in-navigation {
+    left: 50%;
+    transform: translate(-50%, 12vh);
+    width: 240px;
+  }
 
-    .burger-and-fries-container {
-        border-bottom: 2px solid transparent;
-    }
+  .burger-and-fries-container {
+    border-bottom: 2px solid transparent;
+  }
 }
 
 .menu-hide {
-    background: white;
-    height: 100vh;
-    opacity: 0;
-    right: -100%;
-    position: fixed;
-    top: 0px;
-    z-index: 50;
-    width: 100%;
-    transition: .3s ease-in;
- }
+  background: white;
+  height: 100vh;
+  opacity: 0;
+  right: -100%;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  width: 100%;
+  transition: 0.3s ease-in;
+}
 
- .menu-hide.show {
-    opacity: 1;
-    right: 0;
- }
+.menu-hide.show {
+  opacity: 1;
+  right: 0;
+}
 
- .fries {
-     a {
-        color: $green;
-        font-size: 36px;
-        padding: 12px 0;
-        text-decoration: none;
-        font-family: 'KelptA1-Bold',
-        Sans-Serif;
-    }
- }
- .hamburger {
-     display: flex;
- }
+.fries {
+  a {
+    color: $green;
+    font-size: 36px;
+    padding: 12px 0;
+    text-decoration: none;
+    font-family: "KelptA1-Bold", Sans-Serif;
+  }
+}
+
+.hamburger {
+  display: flex;
+}
 
 .hamburger-box {
-    width: 32px;
+  width: 32px;
 }
-.burger-and-fries-container .hamburger-inner, .burger-and-fries-container .hamburger-inner::before, .burger-and-fries-container .hamburger-inner::after {
-    height: 2px;
+.burger-and-fries-container .hamburger-inner,
+.burger-and-fries-container .hamburger-inner::before,
+.burger-and-fries-container .hamburger-inner::after {
+  height: 2px;
 }
- .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 32px;
-    background-color: #000;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; 
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 32px;
+  background-color: #000;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }

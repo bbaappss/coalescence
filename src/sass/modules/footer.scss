@@ -1,0 +1,26 @@
+footer {
+  background: rgba(24, 47, 53, 1);
+  position: relative;
+
+  img {
+    padding-top: 24px;
+    @media (min-width: 768px) {
+      padding-top: 64px;
+    }
+
+    z-index: 0;
+  }
+
+  .footer-note {
+    position: absolute;
+    background: rgba(24, 47, 53, 0.8);
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    padding: 18px 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

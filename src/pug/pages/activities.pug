@@ -1,0 +1,109 @@
+extends ../template.pug
+
+
+block content
+  - var page = "activities"
+  div(
+    class="fixed flex items-center" 
+    id="loading"
+    style="z-index: 50000;"
+  )
+    img(
+      class="m-auto inline-block max-w-xs" 
+      src="/images/coalescence-logo.svg"
+    )
+  .fries.menu-hide.custom-type.animate-smooth.animate-dur-md
+    .flex.flex-col.justify-center.items-center.h-full
+      include ../modules/menu.pug
+  .coalesce-body.not-home
+    #navigation.burger-and-fries-container
+      a(href="/" class="logo-in-navigation")
+        img(
+          class="logo-in-navigation-img" 
+          src="/images/coalescence-logo.svg"
+        )
+      .burger-and-fries
+        <button class="hamburger hamburger--collapse js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> 
+      .menu-on-large
+        include ../modules/menu.pug
+  .section.activities.main-section.not-home
+    .inner
+      h1 Activities
+      p Whether you want to level up or try something new, Coalescence has something for everyone!
+      hr
+      .section-layout-2
+          h2.hide-on-large Hiking
+          .layout-2-content
+            .text
+              h2.show-on-large Hiking
+              p Join us on a guided hike to a small waterfall or set out on your own and explore everything the Sierra Nevada have to offer. 
+            .image
+              .picture-frame.picture-frame-1
+                img(
+                    class="trees"
+                    src="/images/hiking.jpg"
+                )
+      .section-layout-2
+          h2.hide-on-large Climbing
+          .layout-2-content
+            .text
+              h2.show-on-large Climbing
+              p ascend the Sierra’s rocky cliffs with our guided instructors, who are there to train the beginner and root for the experienced climber.  
+            .image
+              .picture-frame.picture-frame-1
+                img(
+                    class="trees"
+                    src="/images/climbing.jpg"
+                )
+      .section-layout-2
+          h2.hide-on-large Mountain Biking
+          .layout-2-content
+            .text
+              h2.show-on-large Mountain Biking
+              p Ride the trails of the Sequoia National Forest and take in the majestic beauty of the lower Sierra Nevada. Rent a bike or bring your own and hop on the shuttle for your best bike ride of the summer! 
+            .image
+              .picture-frame.picture-frame-1
+                img(
+                    class="trees"
+                    src="/images/mountain-biking.jpg"
+                )
+      .section-layout-2
+          h2.hide-on-large White Water Rafting
+          .layout-2-content
+            .text
+              h2.show-on-large White Water Rafting
+              p Paddle down the Kern River over Class III and IV rapids with an experienced rafting guide. The most exhilarating way to beat the summer heat! 
+            .image
+              .picture-frame.picture-frame-1
+                img(
+                    class="trees"
+                    src="/images/mountain-biking.jpg"
+                )
+      .section-layout-2
+          h2.hide-on-large Yoga
+          .layout-2-content
+            .text
+              h2.show-on-large Yoga
+              p Build and deepen your connection with the outdoors through yoga and meditation. Practicing yoga in nature will nourish your soul and heighten your consciousness 
+            .image
+              .picture-frame.picture-frame-1
+                img(
+                    class="trees"
+                    src="/images/yoga.jpg"
+                )
+  .section.rsvp
+    h2 Join us June 11-13, 2021. 
+    p Reserve your spot today and be one of the few founding Coalescees.
+    a.cta(target="_blank", href="http://www.eventbrite.com") RSVP
+      span → 
+  .sections-layout-1
+    include ../modules/sponsors.pug
+    .section.newsletter
+      include ../modules/newsletter.pug
+
+  include ../modules/footer.pug
+  

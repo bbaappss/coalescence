@@ -1,36 +1,56 @@
 .newsletter {
-    padding-bottom: 20px;
-    padding-top: 60px;
+  background: $fadedGreen;
+  color: $green;
+  h2 {
+    color: $green;
+    text-align: left;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
 }
-#mc_embed_signup form {
-    padding: 24px 0 0;
-    .mc-field-group {
-        padding-top: 12px;
-        width: 100%;
-    }
 
-    textarea {
-        border-radius: 4px;
-        width: 100%;
-    }
-    
-    .button {
-        background-color: white;
-        border-radius: 24px;
-        color: $green;
-        display: block;
-        font-family: 'KelptA1-Bold', Sans-Serif;
-        font-size: 24px;
-        height: inherit;
-        letter-spacing: .5px;
-        padding: 14px 12px 8px 12px;
-        margin: 24px auto;
-        text-align: center;
-        width: 100%;
-    }
+#mc_embed_signup form {
+  padding: 12px 0 0;
+
+  .mc-field-group {
+    padding-top: 12px;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    border: 1px solid $green;
+  }
+
+  textarea {
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .cta {
+    border-radius: 24px;
+    color: $white;
+    height: inherit;
+    letter-spacing: 0.5px;
+    margin: 24px 0 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 #mc_embed_signup .indicates-required {
-    text-align: inherit;
-    font-size: 14px;
+  text-align: inherit;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .newsletter {
+    background: $white;
+    h2 {
+      font-size: 56px;
+    }
+  }
 }

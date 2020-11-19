@@ -5,8 +5,8 @@
 Once you're ready and set up with [npm](https://nodejs.org/en/), whip out your terminal and enter in the following goodies:
 
 ```sh
-git clone https://github.com/bbaappss/discover-divinitree.git
-cd discover-divinitree
+git clone https://github.com/bbaappss/coalescence.git
+cd coalescence
 npm install gulp-cli -g
 npm install
 gulp

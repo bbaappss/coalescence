@@ -1,0 +1,76 @@
+.picture-frame {
+  background-image: url(../../images/patterns/Group2.png);
+  background-attachment: fixed;
+  background-size: 160px;
+
+  padding: 64px 24px;
+}
+
+@media (min-width: 768px) {
+  .picture-frame {
+    background-size: 160px;
+    padding: 64px 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .picture-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > * {
+      min-height: 300px !important;
+      margin-top: 32px;
+
+      + * {
+        margin-top: 64px;
+        display: block;
+      }
+    }
+  }
+}
+
+.image-border {
+  border: solid 5px $green;
+  @media (min-width: 1280px) {
+    border: solid 15px $green;
+  }
+}
+
+.image-border-1 {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.image-border-2 {
+  border-radius: 100px 40px 25px 15px/15px 100px 225px 105px;
+}
+
+@media (min-width: 1024px) {
+  .homepage-picture-frame {
+    > * {
+      min-height: 28vw !important;
+      max-height: 28vw !important;
+      margin-top: 32px;
+      max-width: 28vw;
+    }
+
+    img:first-child {
+      margin-left: -200px;
+    }
+
+    img:last-child {
+      margin-top: -4vw;
+      margin-right: -240px;
+    }
+  }
+  .radical-cooperation-2 + .radical-cooperation-2 .homepage-picture-frame {
+    img:first-child {
+      margin-left: 200px;
+    }
+
+    img:last-child {
+      margin-right: 240px;
+    }
+  }
+}

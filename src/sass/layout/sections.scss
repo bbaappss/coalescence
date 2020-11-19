@@ -1,76 +1,197 @@
 .section {
-    background-color: rgba(71, 106, 92, 1);
-    color: white;
-    padding: 24px;
+  background-color: rgba(71, 106, 92, 1);
+  color: white;
+  padding: 24px 24px 64px;
 
-    &.light {
-        background-color: white;
-        color: rgba(71, 106, 92, 1);
+  &.minifesto {
+    padding-top: 74px;
+  }
 
-        h2 {
-            border-bottom: 2px solid rgba(71, 106, 92, 1);
-        }
-    }
-
-    &.join-us {
-        padding-bottom: 0;
-    }
+  &.light {
+    background-color: white;
+    color: $green;
 
     h2 {
-        display: inline-block;
-        border-bottom: 2px solid $white;
-        font-weight: bold;
-        font-size: 30px;
-
-        &.no-underline {
-            border-bottom: 0;
-        }
+      border-bottom: 2px solid rgba(71, 106, 92, 1);
+      color: $green;
     }
+  }
 
-    h3 {
-        font-size: 36px;
+  &.join-us {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    border-bottom: 2px solid $white;
+    color: $white;
+    font-weight: bold;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    padding: 24px 0 12px;
+
+    &.no-underline {
+      border-bottom: 0;
     }
+  }
 
-    p {
-        font-size: 24px;
-        line-height: 1.5;
-        margin-top: 16px;
+  h3 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 16px;
+  }
+
+  &.stay-active {
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+
+  &.sponsors {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  &.powers-combined {
+    padding-top: 60px;
+    h2 {
+      font-size: 30px;
     }
-
-    &.stay-active {
-        padding-bottom: 80px;
-        padding-top: 60px;
-    }
-
-    &.sponsors {
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
-
-    &.powers-combined {
-        padding-top: 60px;
-        h2 {
-            font-size: 30px;
-        }
-    }
-
+  }
 }
 
-.section>.section {
-    padding-left: 0;
-    padding-right: 0;
+.section > .section {
+  padding-left: 0;
+  padding-right: 0;
 
-    &:not(:first-child) {
-        padding-top: 0;
-    }
+  &:not(:first-child) {
+    padding-top: 0;
+  }
 }
 
 .min-80vh {
-    min-height: 80vh;
+  min-height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 74px 80px;
+
+    h2 {
+      font-size: 64px;
+    }
+
+    p {
+      font-weight: 800;
+      font-size: 28px;
+    }
+    p + p {
+      margin-top: 24px;
+      font-size: 24px;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
-    .section {
-        padding: 2vw 10vw;
+  .section {
+    padding: 74px 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sections-layout-1 {
+    display: flex;
+    align-items: center;
+    > * {
+      width: 50vw;
+      &:first-child {
+        border-right: 1px dashed $slightFadedGreen;
+      }
     }
+  }
+}
+
+.section-layout-2 {
+  &:not(:first-of-type) {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid $green;
+  }
+
+  @media (min-width: 1280px) {
+    &:not(:first-of-type) {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    &:nth-child(odd) .layout-2-content {
+      flex-direction: row-reverse;
+      .text {
+        margin-left: 64px;
+      }
+    }
+  }
+}
+
+.layout-2-content {
+  display: flex;
+  flex-direction: column-reverse;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    > * {
+      width: 50vw;
+    }
+    .image img {
+      object-fit: cover;
+    }
+  }
+}
+
+.not-home.main-section {
+  padding-top: 64px;
+  background: white;
+  color: $green;
+  h1 {
+    font-size: 44px;
+    padding-top: 6px;
+  }
+
+  h2 {
+    color: $green;
+    font-size: 32px;
+    text-align: left;
+    padding-bottom: 0;
+    padding-top: 12px;
+  }
+  .inner {
+    padding-top: 16px;
+  }
+  @media (min-width: 1280px) {
+    h1 {
+      font-size: 64px;
+    }
+    .inner {
+      padding-top: 64px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .section.activities {
+    padding-bottom: 0;
+  }
+  .about {
+    padding-top: 120px;
+
+    h2 {
+      text-align: left;
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
 }

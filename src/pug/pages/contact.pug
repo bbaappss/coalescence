@@ -1,0 +1,51 @@
+extends ../template.pug
+
+
+block content
+  - var page = "contact"
+  div(
+    class="fixed flex items-center" 
+    id="loading"
+    style="z-index: 50000;"
+  )
+    img(
+      class="m-auto inline-block max-w-xs" 
+      src="/images/coalescence-logo.svg"
+    )
+  .fries.menu-hide.custom-type.animate-smooth.animate-dur-md
+    .flex.flex-col.justify-center.items-center.h-full
+      include ../modules/menu.pug
+  .coalesce-body.not-home
+    #navigation.burger-and-fries-container
+      a(href="/" class="logo-in-navigation")
+        img(
+          class="logo-in-navigation-img" 
+          src="/images/coalescence-logo.svg"
+        )
+      .burger-and-fries
+        <button class="hamburger hamburger--collapse js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> 
+      .menu-on-large
+        include ../modules/menu.pug
+  .section.activities.main-section.not-home
+    .inner
+      h1 Get in touch
+      p Use the form below to send us a message. 
+      p You can also visit us via social media on #[a.green(href="https://www.instagram.com/coalescefest/" target="_blank") Instagram!]
+      hr 
+      include ../modules/contact-us-form.pug
+  .section.rsvp
+    h2 Join us June 11-13, 2021. 
+    p Reserve your spot today and be one of the few founding Coalescees.
+    a.cta(target="_blank", href="http://www.eventbrite.com") RSVP
+      span → 
+  .sections-layout-1
+    include ../modules/sponsors.pug
+    .section.newsletter
+      include ../modules/newsletter.pug
+
+  include ../modules/footer.pug
+  

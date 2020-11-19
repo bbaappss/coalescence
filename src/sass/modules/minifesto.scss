@@ -1,4 +1,10 @@
-.minifesto {
-    margin: 0 auto;
-    padding-top: 74px;
+@media (min-width: 1080px) {
+  .minifesto {
+    padding-bottom: 96px;
+
+    .inner {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  }
 }
