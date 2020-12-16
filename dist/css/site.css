@@ -862,11 +862,11 @@
   src: url("/fonts/KelptA3-Regular.woff") format("woff"), url("/fonts/KelptA3-Regular.ttf") format("truetype"); }
 
 body {
-  font-family: 'Cutive Mono', monospace, Sans-Serif;
+  font-family: 'Cutive Mono', monospace, Sans-Serif;
   font-weight: normal; }
 
 .btn {
-  font-family: 'KelptA3-Regular', Sans-Serif;
+  font-family: 'KelptA3-Regular', Sans-Serif;
   font-weight: normal; }
 
 h1,
@@ -874,7 +874,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'KelptA1-Bold', Sans-Serif; }
+  font-family: 'KelptA1-Bold', Sans-Serif; }
 
 h4.light {
   font-family: KelptA3-Regular; }
