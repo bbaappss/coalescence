@@ -229,6 +229,16 @@ a {
   }
 }
 
+.show-on-medium {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
 hr {
   margin: 32px 0;
   border-bottom: 1px solid $slightFadedGreen;
